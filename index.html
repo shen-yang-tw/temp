@@ -1,489 +1,479 @@
 <!DOCTYPE html>
-<html lang="zh-Hant-TW" xml:lang="zh-Hant">
+<html class="text-m" lang="zh-Hant-TW">
 
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <meta name="format-detection" content="telephone=no">
-    <!-- Fix phone number style for MS Edge -->
-    <meta name="Designer&Developer" content="楊軒羽 Shen Yang | Graphic Web Designer & Front-end Developer | 前端設計工程師">
-    <title>國立臺灣大學醫學院附設癌醫中心醫院-NTUCC</title>
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/uikit.min.css">
-    <link rel="stylesheet" href="css/fontawesome-5.14.0-all.min.css">
-    <link rel="stylesheet" href="css/fontawesome-5.14.0-svg-with-js.min.css">
-    <link rel="stylesheet" href="css/animate-3.6.css">
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/delay&duration.css">
-    <link rel="stylesheet" href="css/style.css">
-    <script src="js/jquery-3.3.1.min.js "></script>
-    <script src="js/bootstrap.bundle.min.js "></script>
-    <script src="js/uikit.min.js "></script>
-    <script src="js/uikit-icons.min.js "></script>
-    <script src="js/fontawesome-5.14.0-all.min.js "></script>
-    <script src="js/script.js " defer></script>
-  </head>
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="Developer" content="楊軒羽 Shen Yang | Front-end Developer | 前端設計工程師">
+		<title>國家教育研究院-研究成果典藏庫</title>
+		<!-- favicon -->
+		<link rel="shortcut icon" type="image/gif" href="img/blank.gif" />
+		<!-- /favicon -->
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="css/bootstrap-icons.css">
+		<link rel="stylesheet" type="text/css" href="css/fontawesome.min.css">
+		<link rel="stylesheet" type="text/css" href="css/swiper-bundle.min.css">
+		<link rel="stylesheet" type="text/css" href="css/tailwind.css">
+		<link rel="stylesheet" type="text/css" href="css/main.min.css">
+		<link rel="stylesheet" type="text/css" href="css/style.min.css">
+	</head>
 
-  <body id="top" class="uk-background-cover uk-background-top-center" uk-height-viewport>
-    <a class="bg_blackOpacity5 p-2 text-white rounded uk-text-center uk-position-fixed uk-position-small uk-position-bottom-right uk-position-z-index" href="#top" title="回到最上" aria-label="Go to Top" uk-totop uk-scroll></a>
-    <div class="uk-offcanvas-content">
-      <header class="shadow-sm">
-        <hr class="border_primary border8 m-0">
-        <div class="shadow-sm" uk-sticky="media: (max-width: 959px); animation: uk-animation-slide-top; top: 200">
-          <nav class="uk-navbar-container uk-position-relative">
-            <div class="bg_primary uk-position-cover"></div>
-            <div class="bg-white position-relative">
-              <div class="px-2 px-md-4 uk-container" uk-navbar>
-                <a class="remove_underline px-1 uk-position-absolute uk-visible@m" href="#U" id="AU" name="U" title="上方功能區塊" accesskey="U" style="left:0; margin-top:-2px;">:::</a>
-                <div class="uk-navbar-left">
-                  <h1 class="py-2"><a title="#" class="px-0 uk-navbar-item uk-logo"><img src="img/logo.svg" width="330" height="65" alt="Logo"></a></h1>
-                </div>
-                <div class="uk-visible@m uk-navbar-right">
-                  <div class="h-100 uk-flex uk-flex-middle" uk-margin>
-                    <span><a class="px-2" href="#">門診時間</a></span>
-                    <span><a class="px-2" href="#">站內檢索</a></span>
-                    <span><a class="px-2" href="#">人才招募</a></span>
-                    <span>｜</span>
-                    <span class="bgBlack"><a class="px-2" href="#">English</a></span>
-                    <span class="btnFontSize btnFontSizeS bgBlack"><button class="px-2 uk-button" title="縮小字級">A-</button></span>
-                    <span class="btnFontSize btnFontSizeM bgBlack active"><button class="px-2 uk-button" title="適中字級">A</button></span>
-                    <span class="btnFontSize btnFontSizeL bgBlack"><button class="px-2 uk-button" title="加大字級">A+</button></span>
-                  </div>
-                </div>
-                <div class="uk-hidden@m uk-navbar-right">
-                  <button class="color_primary pl-4 pr-0 uk-navbar-toggle" uk-navbar-toggle-icon uk-toggle="target: #offcanvas"><span class="sr-only">選單</span></button>
-                </div>
-              </div>
-            </div>
-            <div class="d-flex uk-visible@m uk-container" uk-navbar>
-              <div class="uk-navbar-center">
-                <ul class="borderB0 border_white uk-tab">
-                  <li hidden></li>
-                  <li>
-                    <a class="fontSizeH5 border4 text-white" href="#">關於癌醫</a>
-                    <div class="bg_whiteOpacity9 uk-overflow-auto uk-height-max-large" uk-dropdown="offset: 0">
-                      <ul class="uk-nav uk-dropdown-nav">
-                        <li><a class="hover_linkline fontSize1 text-dark" href="#">Itim</a></li>
-                        <li><a class="hover_linkline fontSize1 text-dark" href="#">Itim</a></li>
-                      </ul>
-                    </div>
-                  </li>
-                  <li>
-                    <a class="fontSizeH5 border4 text-white" href="#">訊息專區</a>
-                    <div class="bg_whiteOpacity9 uk-overflow-auto uk-height-max-large" uk-dropdown="offset: 0">
-                      <ul class="uk-nav uk-dropdown-nav">
-                        <li class="mt-0 uk-nav-header">
-                          <span class="fontSize1 text-dark">Itim</span>
-                          <ul class="uk-nav-sub">
-                            <li><a class="hover_linkline fontSize1 text-dark" href="#">Sub item</a></li>
-                            <li><a class="hover_linkline fontSize1 text-dark" href="#">Sub item</a></li>
-                          </ul>
-                        </li>
-                        <li class="mt-0 uk-nav-header">
-                          <span class="fontSize1 text-dark">Itim</span>
-                          <ul class="uk-nav-sub">
-                            <li><a class="hover_linkline fontSize1 text-dark" href="#">Sub item</a></li>
-                            <li><a class="hover_linkline fontSize1 text-dark" href="#">Sub item</a></li>
-                          </ul>
-                        </li>
-                      </ul>
-                    </div>
-                  </li>
-                  <li>
-                    <a class="fontSizeH5 border4 text-white" href="#">病人服務</a>
-                    <div class="bg_whiteOpacity9 uk-overflow-auto uk-height-max-large" uk-dropdown="offset: 0">
-                      <ul class="uk-nav uk-dropdown-nav">
-                        <li class="mt-0 uk-nav-header">
-                          <span class="fontSize1 text-dark">Itim</span>
-                          <ul class="uk-nav-sub">
-                            <li>
-                              <a class="hover_linkline fontSize1 text-dark" href="#">Sub item</a>
-                              <ul>
-                                <li><a class="hover_linkline fontSize1 text-dark" href="#">Sub item</a></li>
-                                <li><a class="hover_linkline fontSize1 text-dark" href="#">Sub item</a></li>
-                              </ul>
-                            </li>
-                            <li>
-                              <a class="hover_linkline fontSize1 text-dark" href="#">Sub item</a>
-                              <ul>
-                                <li><a class="hover_linkline fontSize1 text-dark" href="#">Sub item</a></li>
-                                <li><a class="hover_linkline fontSize1 text-dark" href="#">Sub item</a></li>
-                              </ul>
-                            </li>
-                          </ul>
-                        </li>
-                        <li class="mt-0 uk-nav-header">
-                          <span class="fontSize1 text-dark">Itim</span>
-                          <ul class="uk-nav-sub">
-                            <li>
-                              <a class="hover_linkline fontSize1 text-dark" href="#">Sub item</a>
-                              <ul>
-                                <li><a class="hover_linkline fontSize1 text-dark" href="#">Sub item</a></li>
-                                <li><a class="hover_linkline fontSize1 text-dark" href="#">Sub item</a></li>
-                              </ul>
-                            </li>
-                            <li>
-                              <a class="hover_linkline fontSize1 text-dark" href="#">Sub item</a>
-                              <ul>
-                                <li><a class="hover_linkline fontSize1 text-dark" href="#">Sub item</a></li>
-                                <li><a class="hover_linkline fontSize1 text-dark" href="#">Sub item</a></li>
-                              </ul>
-                            </li>
-                          </ul>
-                        </li>
-                      </ul>
-                    </div>
-                  </li>
-                  <li><a class="fontSizeH5 border4 text-white" href="#">醫療團隊</a></li>
-                  <li><a class="fontSizeH5 border4 text-white" href="#">教育研究</a></li>
-                </ul>
-              </div>
-            </div>
-          </nav>
-        </div>
-        <div id="offcanvas" uk-offcanvas>
-          <div class="bg_primary py-5 uk-offcanvas-bar">
-            <button class="uk-offcanvas-close" type="button" uk-close></button>
-            <ul class="uk-nav uk-nav-default text-white">
-              <li class="py-1 uk-parent">
-                <div class="flex">
-                  <a class="flex-1 flex items-center" href="#">關於癌醫</a>
-                  <a class="flex-1 flex items-center justify-end" href="#" title="展開/收合選單" onclick="toggleAllClass(findChildren(findParent(this, 'LI'), '.toggle'), 'hidden'); return false;"><span class="toggle" uk-icon="icon: chevron-right"></span><span class="toggle hidden" uk-icon="icon: chevron-down"></span class="toggle"></a>
-                </div>
-                <ul class="toggle hidden uk-nav-sub">
-                  <li><a class="mx-2" href="#">Item</a></li>
-                  <li><a class="mx-2" href="#">Item</a></li>
-                </ul>
-              </li>
-              <li class="py-1 uk-parent">
-                <div class="flex">
-                  <a class="flex-1 flex items-center" href="#">訊息專區</a>
-                  <a class="flex-1 flex items-center justify-end" href="#" title="展開/收合選單" onclick="toggleAllClass(findChildren(findParent(this, 'LI'), '.toggle'), 'hidden'); return false;"><span class="toggle" uk-icon="icon: chevron-right"></span><span class="toggle hidden" uk-icon="icon: chevron-down"></span class="toggle"></a>
-                </div>
-                <ul class="toggle hidden uk-nav-sub">
-                  <li class="mt-0 uk-nav-header">
-                    <span>Itim</span>
-                    <ul class="uk-nav-sub">
-                      <li><a class="mx-2" href="#">Sub item</a></li>
-                      <li><a class="mx-2" href="#">Sub item</a></li>
-                    </ul>
-                  </li>
-                  <li class="mt-0 uk-nav-header">
-                    <span>Itim</span>
-                    <ul class="uk-nav-sub">
-                      <li><a class="mx-2" href="#">Sub item</a></li>
-                      <li><a class="mx-2" href="#">Sub item</a></li>
-                    </ul>
-                  </li>
-                </ul>
-              </li>
-              <li class="py-1 uk-parent">
-                <div class="flex">
-                  <a class="flex-1 flex items-center" href="#">病人服務</a>
-                  <a class="flex-1 flex items-center justify-end" href="#" title="展開/收合選單" onclick="toggleAllClass(findChildren(findParent(this, 'LI'), '.toggle'), 'hidden'); return false;"><span class="toggle" uk-icon="icon: chevron-right"></span><span class="toggle hidden" uk-icon="icon: chevron-down"></span class="toggle"></a>
-                </div>
-                <ul class="toggle hidden uk-nav-sub">
-                  <li class="mt-0 uk-nav-header">
-                    <span>Itim</span>
-                    <ul class="uk-nav-sub">
-                      <li>
-                        <a class="mx-2" href="#">Sub item</a>
-                        <ul>
-                          <li><a class="mx-2" href="#">Sub item</a></li>
-                          <li><a class="mx-2" href="#">Sub item</a></li>
-                        </ul>
-                      </li>
-                      <li>
-                        <a class="mx-2" href="#">Sub item</a>
-                        <ul>
-                          <li><a class="mx-2" href="#">Sub item</a></li>
-                          <li><a class="mx-2" href="#">Sub item</a></li>
-                        </ul>
-                      </li>
-                    </ul>
-                  </li>
-                  <li class="mt-0 uk-nav-header">
-                    <span>Itim</span>
-                    <ul class="uk-nav-sub">
-                      <li>
-                        <a class="mx-2" href="#">Sub item</a>
-                        <ul>
-                          <li><a class="mx-2" href="#">Sub item</a></li>
-                          <li><a class="mx-2" href="#">Sub item</a></li>
-                        </ul>
-                      </li>
-                      <li>
-                        <a class="mx-2" href="#">Sub item</a>
-                        <ul>
-                          <li><a class="mx-2" href="#">Sub item</a></li>
-                          <li><a class="mx-2" href="#">Sub item</a></li>
-                        </ul>
-                      </li>
-                    </ul>
-                  </li>
-                </ul>
-              </li>
-              <li class="py-1 uk-parent">
-                <div class="flex">
-                  <a class="flex-1 flex items-center" href="#">醫療團隊</a>
-                  <a class="flex-1 flex items-center justify-end" href="#" title="展開/收合選單" onclick="toggleAllClass(findChildren(findParent(this, 'LI'), '.toggle'), 'hidden'); return false;"><span class="toggle" uk-icon="icon: chevron-right"></span><span class="toggle hidden" uk-icon="icon: chevron-down"></span class="toggle"></a>
-                </div>
-                <ul class="toggle hidden uk-nav-sub">
-                  <li><a class="mx-2" href="#">Item</a></li>
-                  <li><a class="mx-2" href="#">Item</a></li>
-                </ul>
-              </li>
-              <li class="py-1 uk-parent">
-                <div class="flex">
-                  <a class="flex-1 flex items-center" href="#">教育研究</a>
-                  <a class="flex-1 flex items-center justify-end" href="#" title="展開/收合選單" onclick="toggleAllClass(findChildren(findParent(this, 'LI'), '.toggle'), 'hidden'); return false;"><span class="toggle" uk-icon="icon: chevron-right"></span><span class="toggle hidden" uk-icon="icon: chevron-down"></span class="toggle"></a>
-                </div>
-                <ul class="toggle hidden uk-nav-sub">
-                  <li><a class="mx-2" href="#">Item</a></li>
-                  <li><a class="mx-2" href="#">Item</a></li>
-                </ul>
-              </li>
-              <li class="uk-nav-divider"></li>
-              <li><a href="#">門診時間</a></li>
-              <li><a href="#">站內檢索</a></li>
-              <li><a href="#">人才招募</a></li>
-              <li><a href="#">English</a></li>
-            </ul>
-          </div>
-        </div>
-        <hr class="border-dark m-0">
-      </header>
-      <section class="position-relative uk-margin">
-        <div class="uk-container" uk-height-viewport="min-height: 300">
-          <ul class="uk-breadcrumb">
-            <li><a href="#">首頁</a></li>
-            <li><span>頁面標題</span></li>
-          </ul>
-          <div class="position-relative"><a class="remove_underline px-1 uk-position-absolute uk-visible@m" href="#C" id="AC" name="C" title="中央內容區塊" accesskey="C" style="left:-30px">:::</a></div>
-          <div class="mb-sm-2 uk-card uk-card-small uk-card-default uk-card-body" uk-height-viewport="min-height: 300">
-            <div class="uk-grid-medium uk-grid" uk-grid>
-              <div class="uk-width-1-3@m uk-width-1-4@l">
-                <div class="max_h200 max_h700M uk-overflow-auto">
-                  <ul class="list_tabs uk-nav-default">
-                    <li class="p-0 uk-nav-header">
-                      <a class="remove_underline w-100 break-all px-2" href="#content">Level1</a>
-                    </li>
-                    <li class="p-0 uk-nav-header uk-parent">
-                      <div class="p-0 uk-grid uk-grid-collapse uk-grid" uk-grid>
-                        <div class="uk-width-expand"><a class="remove_underline w-100 break-all px-2" href="#">Level2</a></div>
-                        <div class="uk-width-auto"><a class="remove_underline w-100 break-all px-2 h-full" href="#" title="展開/收合選單" onclick="toggleAllClass(findChildren(findParent(this, 'LI'), '.toggle'), 'hidden'); return false;"><span class="toggle" uk-icon="icon: chevron-right"></span><span class="toggle hidden" uk-icon="icon: chevron-down"></span class="toggle"></a></div>
-                      </div>
-                      <ul class="toggle hidden uk-nav-sub p-0 bg-white">
-                        <li class="p-0"><a class="remove_underline w-100 break-all pl-4 px-2" href="#">Item</a></li>
-                        <li class="p-0"><a class="remove_underline w-100 break-all pl-4 px-2" href="#">Item</a></li>
-                      </ul>
-                    </li>
-                    <li class="p-0 uk-nav-header uk-parent uk-open">
-                      <div class="p-0 uk-grid uk-grid-collapse active uk-grid" uk-grid>
-                        <div class="uk-width-expand"><a class="remove_underline w-100 break-all px-2" href="#">Level3</a></div>
-                        <div class="uk-width-auto"><a class="remove_underline w-100 break-all px-2 h-full" href="#" title="展開/收合選單" onclick="toggleAllClass(findChildren(findParent(this, 'LI'), '.toggle'), 'hidden'); return false;"><span class="toggle" uk-icon="icon: chevron-right"></span><span class="toggle hidden" uk-icon="icon: chevron-down"></span class="toggle"></a></div>
-                      </div>
-                      <ul class="toggle hidden uk-nav-sub p-0 bg-white">
-                        <li class="p-0">
-                          <a class="remove_underline w-100 break-all pl-4 px-2" href="#content">Title</a>
-                          <ul class="uk-nav-sub p-0">
-                            <li class="p-0 active"><a class="remove_underline w-100 break-all pl-6 px-2" href="#">Item</a></li>
-                            <li class="p-0"><a class="remove_underline w-100 break-all pl-6 px-2" href="#">Item</a></li>
-                          </ul>
-                        </li>
-                      </ul>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-              <div class="uk-width-expand@m">
-                <div class="mb-3 w-100 uk-inline">
-                  <h2 class="btmline mb-1 text-justify">頁面標題</h2>
-                </div>
-                <form>
-                  <div class="ckeditor" id="content">
-                    <div class="uk-grid-medium uk-grid" uk-grid>
-                      <div class="text-center uk-width-1-6@s uk-width-1-3@m uk-width-1-4@l">
-                        <img class="rounded-0 img-thumbnail w-100" data-src="https://picsum.photos/300/400?image=1005" width="300" height="400" alt="#" uk-img>
-                      </div>
-                      <div class="uk-width-5-6@s uk-width-expand@m">
-                        <h2 class="font-weight-bold uk-card-title uk-margin" uk-margin>
-                          <span class="cht">陳大明</span><span class="eng">Shih-Pu Wang</span>
-                          <a class="btn_primary uk-button uk-button-default uk-width-1-1 uk-width-auto@s" href="#">我要掛號</a>
-                        </h2>
-                        <p class="listFaIcon_indent m-0"><i class="fas fa-user-md fa-fw"></i><span class="comma_dot mr-0 pr-0">放射腫瘤部主治醫師</span><span class="comma_dot mr-0 pr-0">綜合內科部主任</span></p>
-                        <p class="listFaIcon_indent m-0"><i class="fas fa-notes-medical fa-fw"></i><span class="afterVLine mr-0 pr-0">大脖子</span><span class="afterVLine mr-0 pr-0">甲狀腺疾病</span><span class="afterVLine mr-0 pr-0">內分泌疾病</span><span class="afterVLine mr-0 pr-0">血壓高</span><span class="afterVLine mr-0 pr-0">膽固醇過高</span><span class="afterVLine mr-0 pr-0">Big neck</span><span class="afterVLine mr-0 pr-0">thyroid disease</span><span class="afterVLine mr-0 pr-0">endocrine disease</span></p>
-                      </div>
-                    </div>
-                    <div class="switcher uk-margin">
-                      <!-- <ul class="border2 border_primary uk-tab" uk-tab> -->
-                      <ul class="uk-subnav uk-subnav-pill" uk-switcher>
-                        <li><a href="#">現職</a></li>
-                        <li><a href="#">學歷</a></li>
-                        <li><a href="#">經歷</a></li>
-                      </ul>
-                      <ul class="uk-switcher uk-margin">
-                        <li>
-                          <div class="urlFix" uk-margin>
-                            <table class="uk-table uk-table-small uk-table-striped">
-                              <tbody>
-                                <tr class="mx-0 uk-grid-collapse uk-grid" uk-grid>
-                                  <td class="uk-width-1-1 uk-width-2-5@s">臺北榮民總醫院身障重建中心</td>
-                                  <td class="uk-width-1-1 uk-width-2-5@s">中心主任</td>
-                                  <td class="uk-width-1-1 uk-width-1-5@s">2015-迄今</td>
-                                </tr>
-                                <tr class="mx-0 uk-grid-collapse uk-grid" uk-grid>
-                                  <td class="uk-width-1-1 uk-width-2-5@s">Director</td>
-                                  <td class="uk-width-1-1 uk-width-2-5@s">Rehabilitation and Technical Aid Center, Taipei Veterans General Hospital, Taiwan</td>
-                                  <td class="uk-width-1-1 uk-width-1-5@s">2015-present</td>
-                                </tr>
-                              </tbody>
-                            </table>
-                          </div>
-                        </li>
-                        <li>
-                          <div class="urlFix" uk-margin>
-                            <table class="uk-table uk-table-small uk-table-striped">
-                              <tbody>
-                                <tr class="mx-0 uk-grid-collapse uk-grid" uk-grid>
-                                  <td class="uk-width-1-1 uk-width-1-3@s">國立台灣大學醫學院</td>
-                                  <td class="uk-width-1-1 uk-width-1-3@s">腫瘤醫學研究所</td>
-                                  <td class="uk-width-1-1 uk-width-1-6@s">碩士</td>
-                                  <td class="uk-width-1-1 uk-width-1-6@s">1994-1998</td>
-                                </tr>
-                                <tr class="mx-0 uk-grid-collapse uk-grid" uk-grid>
-                                  <td class="uk-width-1-1 uk-width-1-3@s">National Taiwan University</td>
-                                  <td class="uk-width-1-1 uk-width-1-3@s">Department of Medicine</td>
-                                  <td class="uk-width-1-1 uk-width-1-6@s">BA</td>
-                                  <td class="uk-width-1-1 uk-width-1-6@s">1994-1998</td>
-                                </tr>
-                              </tbody>
-                            </table>
-                          </div>
-                        </li>
-                        <li>
-                          <div class="urlFix" uk-margin>
-                            <table class="uk-table uk-table-small uk-table-striped">
-                              <tbody>
-                                <tr class="mx-0 uk-grid-collapse uk-grid" uk-grid>
-                                  <td class="uk-width-1-1 uk-width-2-5@s">臺北榮民總醫院身障重建中心</td>
-                                  <td class="uk-width-1-1 uk-width-2-5@s">中心主任</td>
-                                  <td class="uk-width-1-1 uk-width-1-5@s">2015-迄今</td>
-                                </tr>
-                                <tr class="mx-0 uk-grid-collapse uk-grid" uk-grid>
-                                  <td class="uk-width-1-1 uk-width-2-5@s">Director</td>
-                                  <td class="uk-width-1-1 uk-width-2-5@s">Rehabilitation and Technical Aid Center, Taipei Veterans General Hospital, Taiwan</td>
-                                  <td class="uk-width-1-1 uk-width-1-5@s">2015-present</td>
-                                </tr>
-                              </tbody>
-                            </table>
-                          </div>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </form>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- main content -->
-      <div id="footer" class="bg_darkestGrey p-3 position-relative">
-        <div class="opacity20 uk-background-cover uk-background-top-center uk-position-cover" data-src="img/bg_footer.png" uk-img></div>
-        <div class="container_responsive@s uk-container uk-container-large position-relative">
-          <div class="position-relative"><a class="remove_underline text-white px-1 uk-position-absolute uk-visible@m" href="#Z" id="AZ" name="Z" title="下方功能區塊" accesskey="Z" style="left:-30px">:::</a></div>
-          <div class="my-1 uk-margin-bottom" id="sitemap" uk-margin hidden>
-            <div class="mb-3 uk-child-width-1-2 uk-child-width-1-3@s uk-child-width-1-4@m uk-child-width-1-6@l uk-grid" uk-grid>
-              <div class="uk-text-break">
-                <p class="border font-weight-bold mb-1 px-1"><a class="text-white" href="#">Title (Link)</a></p>
-                <a class="text-white" href="#">Item</a>
-                <a class="text-white" href="#">Item</a>
-              </div>
-              <div class="uk-text-break">
-                <p class="border font-weight-bold mb-1 px-1">Title</p>
-                <a class="text-white" href="#">Item</a>
-                <a class="text-white" href="#">Item</a>
-                <a class="text-white" href="#">Item</a>
-                <a class="text-white" href="#">得縣花期時媽要得親女公門</a>
-                <a class="text-white" href="#">Item</a>
-              </div>
-              <div class="uk-text-break">
-                <p class="border font-weight-bold mb-1 px-1">Title</p>
-                <a class="text-white" href="#">Item</a>
-                <a class="text-white" href="#">Item</a>
-                <a class="text-white" href="#">Item</a>
-              </div>
-              <div class="uk-text-break">
-                <p class="border font-weight-bold mb-1 px-1">Title</p>
-                <a class="text-white" href="#">Item</a>
-                <a class="text-white" href="#">Item</a>
-                <a class="text-white" href="#">Item</a>
-                <a class="text-white" href="#">Item</a>
-                <a class="text-white" href="#">Item</a>
-                <a class="text-white" href="#">Item</a>
-                <a class="text-white" href="#">得縣花期時媽要得親女公門</a>
-                <a class="text-white" href="#">Item</a>
-              </div>
-              <div class="uk-text-break">
-                <p class="border font-weight-bold mb-1 px-1">Title</p>
-                <a class="text-white" href="#">Item</a>
-                <a class="text-white" href="#">Item</a>
-                <a class="text-white" href="#">Item</a>
-              </div>
-              <div class="uk-text-break">
-                <p class="border font-weight-bold mb-1 px-1">Title</p>
-                <a class="text-white" href="#">Item</a>
-                <a class="text-white" href="#">Item</a>
-              </div>
-              <div class="uk-text-break">
-                <p class="border font-weight-bold mb-1 px-1">Title</p>
-                <a class="text-white" href="#">Item</a>
-                <a class="text-white" href="#">Item</a>
-                <a class="text-white" href="#">Item</a>
-                <a class="text-white" href="#">Item</a>
-                <a class="text-white" href="#">Item</a>
-                <a class="text-white" href="#">Item</a>
-                <a class="text-white" href="#">得縣花期時媽要得親女公門</a>
-                <a class="text-white" href="#">Item</a>
-              </div>
-            </div>
-            <hr class="border-light">
-          </div>
-          <footer class="uk-grid-small uk-grid-divider uk-child-width-expand uk-grid" uk-grid>
-            <div class="uk-width-1-3@m uk-width-1-3@l uk-width-1-4@xl">
-              <img class="uk-width-1-3@s uk-width-1-1@m uk-width-4-5@xl" data-src="img/logo_white.svg" alt="台大癌醫中心醫院logo" uk-img>
-              <div class="uk-margin" uk-margin>
-                <span class="hanging_indent w-100 mr-3"><i class="mr-1 fas fa-map-marker-alt fa-fw"></i>106 台北市大安區基隆路三段155巷57號</span>
-                <span class="hanging_indent w-100 mr-3"><i class="mr-1 fas fa-phone fa-fw"></i><strong>+ 886 2 2322-0322</strong></span>
-              </div>
-            </div>
-            <div uk-margin>
-              <div uk-margin>
-                <a class="linkline" href="https://www.ntucc.gov.tw/ntucc/Fpage.action?fid=98&&muid=141">員工專區</a>｜<a class="linkline" href="https://www.ntucc.gov.tw/ntucc/Fpage.action?muid=109&fid=65">服務信箱</a>｜<a class="linkline" href="#">常見問題</a>｜<a class="linkline" href="https://www.ntucc.gov.tw/ntucc/Fpage.action?muid=47&fid=6">隱私權保護及資訊安全政策</a>｜<a class="linkline" href="https://www.ntuh.gov.tw/ntuh/Index.action">臺灣大學醫學院附設醫院</a>
-                <div class="mb-2 float-md-right">
-                  <div class="uk-flex uk-flex-middle"><a class="remove_underline bg-dark px-2 py-1 text-white" href="#" uk-toggle="target: #sitemap">網站地圖</a><a class="opacity75 hover:opacity-100" href="#" title="無障礙AA標章" target="_blank"><img src="img/accessibilityAA.jpg" alt="無障礙AA標章" style="max-height:36px;"></a></div>
-                </div>
-              </div>
-              <div uk-margin>
-                <div uk-margin><span><i class="mr-1 fas fa-eye fa-fw"></i>當日瀏覽 <span class="bg-dark px-2 mr-3">2,806</span></span><span><i class="mr-1 fas fa-users fa-fw"></i>在線人數 <span class="bg-dark px-2 mr-3">49</span></span><span><i class="mr-1 fas fa-chart-bar fa-fw"></i>瀏覽總計 <span class="bg-dark px-2 mr-3">6,215,595</span></span><a href="https://www.facebook.com/NTUCC.TW" title="[另開新視窗] 前往臺大癌醫臉書專頁"><i class="fab fa-facebook-square  fa-lg fa-fw"></i><span class="sr-only">前往臺大癌醫臉書專頁</span></a></div>
-                <div uk-grid uk-margin>
-                  <div>版權所有 © <span class="year"></span> 國立臺灣大學醫學院附設癌醫中心醫院</div>
-                  <div>建議使用 IE11 以上或 Edge、Firefox、Chrome 瀏覽器</div>
-                  <div>最佳瀏覽螢幕解析度 1920x1080</div>
-                  <div>最後更新日期<span class="ml-1">107-09-20</span></div>
-                </div>
-              </div>
-            </div>
-          </footer>
-        </div>
-      </div>
-      <!-- footer -->
-    </div>
-    <!-- offcanvas-content -->
+	<body id="top" class="index login focus tw:min-h-screen">
+		<div class="tw:text-center tw:leading-10 tw:text-white tw:bg-pink-900"><noscript class="tw:py-1">您的瀏覽器不支援JavaScript功能，若網頁功能無法正常使用時，請開啟瀏覽器JavaScript狀態！</noscript></div>
+		<!-- header -->
+		<header class="header shadow-lg ps-2 ps-lg-0">
+			<span class="d-none d-lg-inline-block tw:absolute z-1"><a id="gotocenter" class="btn btn-primary visually-hidden-focusable" href="#AC" title="移到主要內容">跳到主要內容</a></span>
+			<!-- container -->
+		  <div class="headerContainer bg-white">
+		    <nav class="navbar navbar-expand-md gap-1 p-0 tw:h-[69px]">
+		      <!-- navbarBg -->
+		      <div class="navbarBg w-100">
+		        <!-- navbarContainer -->
+		        <div class="navbarContainer d-flex justify-content-between align-items-center container-fluid px-3 px-lg-5">
+		          <!-- Logo -->
+		          <div class="logoBG">
+		            <div class="logoContainer d-flex align-items-center w-100 me-auto">
+		              <a class="logo me-3" href="index.html">
+		                <h1 class="visually-hidden-focusable">國家教育研究院-研究成果典藏庫</h1>
+		                <img class="w-100" src="img/logo.svg" alt="國家圖書館Logo" width="118">
+		              </a>
+		              <a class="logo2 navbar-brand d-none d-lg-block" href="" title="">
+		                <img src="img/logo2.svg" alt="登入服務Logo" width="104">
+		              </a>
+		            </div>
+		          </div>
+		          <!-- /Logo -->
+		          <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarOffcanvas" aria-controls="navbarOffcanvas">
+		            <i class="h2 bi bi-list tw:leading-0"></i>
+		          </button>
+		          <!-- offcanvas -->
+		          <div id="navbarOffcanvas" class="mainmenuBG bg-white bg-opacity-90 offcanvas offcanvas-start tw:group" tabindex="-1" aria-labelledby="offcanvasTitle">
+		            <div class="mainmenuContainer d-flex flex-column flex-lg-row justify-content-end h-100">
+		              <div class="offcanvas-header">
+		                <h2 id="offcanvasTitle" class="offcanvas-title h5"><img src="img/logo.svg" alt="網站Logo" width="118"></h2>
+		                <button type="button" class="btnClose h4 ms-auto me-2" data-bs-dismiss="offcanvas" aria-label="Close"><i class="bi bi-x-lg"></i></button>
+		              </div>
+		              <span class="d-none d-lg-inline-block"><a class="btn btn-link text-decoration-none text-body" href="#U" id="AU" name="U" title="上方功能區塊" accesskey="U">:::</a></span>
+		              <ul id="mainmenuAccordion" class="mainmenu navbar-nav gap-lg-2 offcanvas-body justify-content-center justify-content-md-end align-items-center">
+		                <li class="nav-item flex-shrink-0">
+		                  <a class="nav-link fw-bold tw:text-[#444444]! tw:hover:text-(--bs-primary)! tw:group-[.show]:my-5" href="">系統簡介</a>
+		                </li>
+		                <li class="nav-item flex-shrink-0">
+		                  <a class="nav-link fw-bold tw:text-[#444444]! tw:hover:text-(--bs-primary)! tw:group-[.show]:my-5" href="">進階檢索</a>
+		                </li>
+		                <li class="nav-item flex-shrink-0">
+		                  <a class="nav-link fw-bold tw:text-[#444444]! tw:hover:text-(--bs-primary)! tw:group-[.show]:my-5" href="">學術著作</a>
+		                </li>
+		                <li class="nav-item flex-shrink-0">
+		                  <a class="nav-link fw-bold tw:text-[#444444]! tw:hover:text-(--bs-primary)! tw:group-[.show]:my-5" href="">研究計劃成果</a>
+		                </li>
+		                <li class="nav-item flex-shrink-0">
+		                  <a class="nav-link fw-bold tw:text-[#444444]! tw:hover:text-(--bs-primary)! tw:group-[.show]:my-5" href="">研究人員</a>
+		                </li>
+		                <li class="nav-item flex-shrink-0">
+		                  <a class="nav-link fw-bold tw:text-[#444444]! tw:hover:text-(--bs-primary)! tw:group-[.show]:my-5" href="">EN</a>
+		                </li>
+		              </ul>
+		            </div>
+		          </div>
+		          <!-- /offcanvas -->
+		        </div>
+		        <!-- /navbarContainer -->
+		      </div>
+		      <!-- /navbarBg -->
+		    </nav>
+		  </div>
+		  <!-- /container -->
+		</header>
+		<!-- /header -->
 
-  </body>
+		<main>
+			<!-- main content -->
+			<!-- slides -->
+			<div class="swiperSlides oneSlide bg-white z-0 tw:after:absolute tw:after:block tw:after:inset-0 tw:after:bg-black/50">
+			  <div class="swiper">
+			    <div class="swiper-wrapper">
+			      <div class="swiper-slide">
+			        <div class="slide tw:relative">
+			          <div class="aspect ratio_custom tw:bg-cover tw:min-h-[200px] tw:bg-no-repeat tw:bg-center tw:bg-gray-200" style="background-image: url(img/banner.jpg)"></div>
+			        </div>
+			      </div>
+			      <div class="swiper-slide">
+			        <div class="slide tw:relative">
+			          <div class="aspect ratio_custom tw:bg-cover tw:min-h-[200px] tw:bg-no-repeat tw:bg-center tw:bg-gray-200" style="background-image: url(https://picsum.photos/1900/500/)"></div>
+			        </div>
+			      </div>
+			      <div class="swiper-slide">
+			        <div class="slide tw:relative">
+			          <div class="aspect ratio_custom tw:bg-cover tw:min-h-[200px] tw:bg-no-repeat tw:bg-center tw:bg-gray-200" style="background-image: url(https://picsum.photos/1900/800)"></div>
+			        </div>
+			      </div>
+			    </div>
+			  </div>
+			  <div class="position-absolute top-50 start-50 translate-middle p-4 p-lg-5 z-2 vstack gap-4 w-100 tw:lg:w-4/5! tw:max-w-[687px]">
+			    <h2 class="fw-bold text-white text-center tw:lg:text-[calc(36rem/16)]!">探索學術資源 連結知識脈絡</h2>
+			    <div class="search">
+			      <label class="visually-hidden" for="inputSearch">搜尋關鍵字</label>
+			      <div class="input-group flex-nowrap">
+			        <input id="inputSearch" class="form-control border-0 ps-4 tw:h-[60px] tw:placeholder:text-[#A5A5A5]!" placeholder="請輸入關鍵字" type="text">
+			        <button class="btn btn-primary border-0 bg-white tw:w-[60px]" type="button"><i class="bi bi-search text-primary" aria-hidden="true"></i><span class="visually-hidden">搜尋</span></button>
+			      </div>
+			    </div>
+			  </div>
+			</div>
+			<!-- /slides -->
+			<section class="tw:relative">
+			  <!-- content -->
+			  <div class="vstack gap-4 gap-lg-5 tw:min-h-screen">
+			    <!-- accesskey -->
+			    <span class="position-relative d-none d-lg-inline-block"><a class="btn btn-link text-decoration-none text-body position-absolute" href="#C" id="AC" name="C" title="中央內容區塊" accesskey="C" style="left:20px; top:20px;">:::</a></span>
+			    <!-- /accesskey -->
+			    <!-- news -->
+			    <div class="news py-4 py-lg-5 tw:lg:py-20!">
+			      <div class="container-lg vstack gap-4 gap-lg-5">
+			        <div class="hstack flex-wrap gap-2 align-items-center border-bottom border-primary border-opacity-50 pb-4">
+			          <h2 class="h3 text-primary fw-semibold my-0 me-auto tw:text-[calc(28rem/16)]"><i class="bi bi-search me-3"></i>最新研究計畫成果</h2>
+			          <a class="btn btn-primary btn-sm fw-medium rounded-pill hstack justify-content-center tw:min-w-[100.56px] tw:h-[40px]" href="">瀏覽更多</a>
+			        </div>
+			        <div class="mx-lg-auto tw:lg:w-[96%]">
+			          <div class="row row-cols-1 row-cols-sm-2 row-cols-xl-3 g-3">
+			            <div class="col">
+			              <a class="btn btn-outline-primary fw-semibold hstack justify-content-center border border-black border-opacity-10 shadow-sm w-100 tw:text-[18rem/16]! tw:min-h-[64px]" href="">教育制度及政策研究中心</a>
+			            </div>
+			            <div class="col">
+			              <a class="btn btn-outline-primary fw-semibold hstack justify-content-center border border-black border-opacity-10 shadow-sm w-100 tw:text-[18rem/16]! tw:min-h-[64px]" href="">課程及教學研究中心</a>
+			            </div>
+			            <div class="col">
+			              <a class="btn btn-outline-primary fw-semibold hstack justify-content-center border border-black border-opacity-10 shadow-sm w-100 tw:text-[18rem/16]! tw:min-h-[64px]" href="">測驗及評量研究中心</a>
+			            </div>
+			            <div class="col">
+			              <a class="btn btn-outline-primary fw-semibold hstack justify-content-center border border-black border-opacity-10 shadow-sm w-100 tw:text-[18rem/16]! tw:min-h-[64px]" href="">語文教育及編譯研究中心</a>
+			            </div>
+			            <div class="col">
+			              <a class="btn btn-outline-primary fw-semibold hstack justify-content-center border border-black border-opacity-10 shadow-sm w-100 tw:text-[18rem/16]! tw:min-h-[64px]" href="">教科書研究中心</a>
+			            </div>
+			            <div class="col">
+			              <a class="btn btn-outline-primary fw-semibold hstack justify-content-center border border-black border-opacity-10 shadow-sm w-100 tw:text-[18rem/16]! tw:min-h-[64px]" href="">原住民族教育研究中心</a>
+			            </div>
+			          </div>
+			        </div>
+			        <hr class="opacity-10 m-0">
+			        <div class="mx-lg-auto overflow-hidden tw:lg:w-[97%]">
+			          <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+			            <div class="col">
+			              <div class="card border border-black border-opacity-10 p-4">
+			                <div class="row">
+			                  <div class="col-8">
+			                    <div class="vstack h-100">
+			                      <a class="text-body fw-semibold stretched-link mb-2" href="">職前教保服務人員教學活動設計評分規準建構之研究</a>
+			                      <div class="mt-auto">
+			                        <div class="vstack gap-1 mt-auto tw:text-[calc(12rem/16)]!">
+			                          <small class="text-muted"><i class="bi bi-person me-2"></i>林小美</small>
+			                          <div class="hstack gap-2">
+			                            <small class="text-blue tw:before:content-['#']">幼兒教育</small>
+			                            <small class="text-blue tw:before:content-['#']">教學活動設計</small>
+			                          </div>
+			                        </div>
+			                      </div>
+			                    </div>
+			                  </div>
+			                  <div class="col-4">
+			                    <div class="ratio" style="--bs-aspect-ratio: calc(100%*153/120);">
+			                      <img class="object-fit-cover shadow-sm" src="img/news.png" alt="圖片說明">
+			                    </div>
+			                  </div>
+			                </div>
+			              </div>
+			            </div>
+			            <div class="col">
+			              <div class="card border border-black border-opacity-10 p-4">
+			                <div class="row">
+			                  <div class="col-8">
+			                    <div class="vstack h-100">
+			                      <a class="text-body fw-semibold stretched-link mb-2" href="">職前教保服務人員教學活動設計評分規準建構之研究</a>
+			                      <div class="mt-auto">
+			                        <div class="vstack gap-1 mt-auto tw:text-[calc(12rem/16)]!">
+			                          <small class="text-muted"><i class="bi bi-person me-2"></i>林小美</small>
+			                          <div class="hstack gap-2">
+			                            <small class="text-blue tw:before:content-['#']">幼兒教育</small>
+			                            <small class="text-blue tw:before:content-['#']">教學活動設計</small>
+			                          </div>
+			                        </div>
+			                      </div>
+			                    </div>
+			                  </div>
+			                  <div class="col-4">
+			                    <div class="ratio" style="--bs-aspect-ratio: calc(100%*153/120);">
+			                      <img class="object-fit-cover shadow-sm" src="img/news.png" alt="圖片說明">
+			                    </div>
+			                  </div>
+			                </div>
+			              </div>
+			            </div>
+			            <div class="col">
+			              <div class="card border border-black border-opacity-10 p-4">
+			                <div class="row">
+			                  <div class="col-8">
+			                    <div class="vstack h-100">
+			                      <a class="text-body fw-semibold stretched-link mb-2" href="">職前教保服務人員教學活動設計評分規準建構之研究</a>
+			                      <div class="mt-auto">
+			                        <div class="vstack gap-1 mt-auto tw:text-[calc(12rem/16)]!">
+			                          <small class="text-muted"><i class="bi bi-person me-2"></i>林小美</small>
+			                          <div class="hstack gap-2">
+			                            <small class="text-blue tw:before:content-['#']">幼兒教育</small>
+			                            <small class="text-blue tw:before:content-['#']">教學活動設計</small>
+			                          </div>
+			                        </div>
+			                      </div>
+			                    </div>
+			                  </div>
+			                  <div class="col-4">
+			                    <div class="ratio" style="--bs-aspect-ratio: calc(100%*153/120);">
+			                      <img class="object-fit-cover shadow-sm" src="img/news.png" alt="圖片說明">
+			                    </div>
+			                  </div>
+			                </div>
+			              </div>
+			            </div>
+			          </div>
+			        </div>
+			      </div>
+			    </div>
+			    <!-- /news -->
+			    <!-- hot -->
+			    <div class="hot py-4 py-lg-5 tw:lg:py-20! tw:bg-cover tw:bg-center tw:bg-no-repeat" style="background-image: url('img/hot.png');">
+			      <div class="container-lg vstack gap-4 gap-lg-5">
+			        <div class="hstack flex-wrap gap-2 align-items-center border-bottom border-primary border-opacity-50 pb-4">
+			          <h2 class="h3 text-primary fw-semibold my-0 me-auto tw:text-[calc(28rem/16)]"><i class="bi bi-graph-up-arrow me-3"></i>瀏覽排行榜（近 3 個月內）</h2>
+			          <a class="btn btn-primary btn-sm fw-medium rounded-pill hstack justify-content-center tw:min-w-[100.56px] tw:h-[40px]" href="">瀏覽更多</a>
+			        </div>
+			        <div class="tw:grid tw:sm:grid-flow-col tw:sm:grid-rows-5 tw:gap-8">
+			          <div class="card border border-black border-opacity-10 shadow-sm p-3 tw:min-h-[120px]">
+			            <div class="vstack h-100">
+			              <div class="hstack gap-2 lh-sm align-items-start mb-4">
+			                <a class="text-body fw-medium stretched-link me-4 tw:line-clamp-3" href=""><span class="text-primary pe-1">01</span>從國際評比看108課綱：臺灣學生的亮眼表現與教育啟示</a>
+			                <span class="w400 material-symbols-rounded text-primary ms-auto" aria-hidden="true">arrow_upward</span>
+			              </div>
+			              <div class="mt-auto">
+			                <div class="hstack gap-2">
+			                  <span class="badge text-primary fw-normal bg-primary bg-opacity-10 me-4 tw:text-[calc(12rem/16)]!">學術著作</span>
+			                  <small class="text-secondary ms-auto tw:text-[calc(12rem/16)]!"><i class="bi bi-eye me-2"></i>63,876</small>
+			                </div>
+			              </div>
+			            </div>
+			          </div>
+			          <div class="card border border-black border-opacity-10 shadow-sm p-3 tw:min-h-[120px]">
+			            <div class="vstack h-100">
+			              <div class="hstack gap-2 lh-sm align-items-start mb-4">
+			                <a class="text-body fw-medium stretched-link me-4 tw:line-clamp-3" href=""><span class="text-primary pe-1">02</span>從國際評比看108課綱：臺灣學生的亮眼表現與教育啟示</a>
+			                <span class="w400 material-symbols-rounded text-success ms-auto" aria-hidden="true">arrow_downward</span>
+			              </div>
+			              <div class="mt-auto">
+			                <div class="hstack gap-2">
+			                  <span class="badge text-primary fw-normal bg-primary bg-opacity-10 me-4 tw:text-[calc(12rem/16)]!">學術著作</span>
+			                  <small class="text-secondary ms-auto tw:text-[calc(12rem/16)]!"><i class="bi bi-eye me-2"></i>63,876</small>
+			                </div>
+			              </div>
+			            </div>
+			          </div>
+			          <div class="card border border-black border-opacity-10 shadow-sm p-3 tw:min-h-[120px]">
+			            <div class="vstack h-100">
+			              <div class="hstack gap-2 lh-sm align-items-start mb-4">
+			                <a class="text-body fw-medium stretched-link me-4 tw:line-clamp-3" href=""><span class="text-primary pe-1">03</span>從國際評比看108課綱：臺灣學生的亮眼表現與教育啟示</a>
+			                <span class="w400 material-symbols-rounded text-primary ms-auto" aria-hidden="true">arrow_upward</span>
+			              </div>
+			              <div class="mt-auto">
+			                <div class="hstack gap-2">
+			                  <span class="badge text-primary fw-normal bg-primary bg-opacity-10 me-4 tw:text-[calc(12rem/16)]!">學術著作</span>
+			                  <small class="text-secondary ms-auto tw:text-[calc(12rem/16)]!"><i class="bi bi-eye me-2"></i>63,876</small>
+			                </div>
+			              </div>
+			            </div>
+			          </div>
+			          <div class="card border border-black border-opacity-10 shadow-sm p-3 tw:min-h-[120px]">
+			            <div class="vstack h-100">
+			              <div class="hstack gap-2 lh-sm align-items-start mb-4">
+			                <a class="text-body fw-medium stretched-link me-4 tw:line-clamp-3" href=""><span class="text-primary pe-1">04</span>從國際評比看108課綱：臺灣學生的亮眼表現與教育啟示</a>
+			                <span class="w400 material-symbols-rounded text-secondary ms-auto" aria-hidden="true">horizontal_rule</span>
+			              </div>
+			              <div class="mt-auto">
+			                <div class="hstack gap-2">
+			                  <span class="badge text-primary fw-normal bg-primary bg-opacity-10 me-4 tw:text-[calc(12rem/16)]!">學術著作</span>
+			                  <small class="text-secondary ms-auto tw:text-[calc(12rem/16)]!"><i class="bi bi-eye me-2"></i>63,876</small>
+			                </div>
+			              </div>
+			            </div>
+			          </div>
+			          <div class="card border border-black border-opacity-10 shadow-sm p-3 tw:min-h-[120px]">
+			            <div class="vstack h-100">
+			              <div class="hstack gap-2 lh-sm align-items-start mb-4">
+			                <a class="text-body fw-medium stretched-link me-4 tw:line-clamp-3" href=""><span class="text-primary pe-1">05</span>從國際評比看108課綱：臺灣學生的亮眼表現與教育啟示</a>
+			                <span class="w400 material-symbols-rounded text-success ms-auto" aria-hidden="true">arrow_downward</span>
+			              </div>
+			              <div class="mt-auto">
+			                <div class="hstack gap-2">
+			                  <span class="badge text-primary fw-normal bg-primary bg-opacity-10 me-4 tw:text-[calc(12rem/16)]!">學術著作</span>
+			                  <small class="text-secondary ms-auto tw:text-[calc(12rem/16)]!"><i class="bi bi-eye me-2"></i>63,876</small>
+			                </div>
+			              </div>
+			            </div>
+			          </div>
+			          <div class="card border border-black border-opacity-10 shadow-sm p-3 tw:min-h-[120px]">
+			            <div class="vstack h-100">
+			              <div class="hstack gap-2 lh-sm align-items-start mb-4">
+			                <a class="text-body fw-medium stretched-link me-4 tw:line-clamp-3" href=""><span class="text-primary pe-1">06</span>從國際評比看108課綱：臺灣學生的亮眼表現與教育啟示</a>
+			                <span class="w400 material-symbols-rounded text-secondary ms-auto" aria-hidden="true">horizontal_rule</span>
+			              </div>
+			              <div class="mt-auto">
+			                <div class="hstack gap-2">
+			                  <span class="badge text-primary fw-normal bg-primary bg-opacity-10 me-4 tw:text-[calc(12rem/16)]!">學術著作</span>
+			                  <small class="text-secondary ms-auto tw:text-[calc(12rem/16)]!"><i class="bi bi-eye me-2"></i>63,876</small>
+			                </div>
+			              </div>
+			            </div>
+			          </div>
+			          <div class="card border border-black border-opacity-10 shadow-sm p-3 tw:min-h-[120px]">
+			            <div class="vstack h-100">
+			              <div class="hstack gap-2 lh-sm align-items-start mb-4">
+			                <a class="text-body fw-medium stretched-link me-4 tw:line-clamp-3" href=""><span class="text-primary pe-1">07</span>從國際評比看108課綱：臺灣學生的亮眼表現與教育啟示</a>
+			                <span class="w400 material-symbols-rounded text-primary ms-auto" aria-hidden="true">arrow_upward</span>
+			              </div>
+			              <div class="mt-auto">
+			                <div class="hstack gap-2">
+			                  <span class="badge text-primary fw-normal bg-primary bg-opacity-10 me-4 tw:text-[calc(12rem/16)]!">學術著作</span>
+			                  <small class="text-secondary ms-auto tw:text-[calc(12rem/16)]!"><i class="bi bi-eye me-2"></i>63,876</small>
+			                </div>
+			              </div>
+			            </div>
+			          </div>
+			          <div class="card border border-black border-opacity-10 shadow-sm p-3 tw:min-h-[120px]">
+			            <div class="vstack h-100">
+			              <div class="hstack gap-2 lh-sm align-items-start mb-4">
+			                <a class="text-body fw-medium stretched-link me-4 tw:line-clamp-3" href=""><span class="text-primary pe-1">08</span>從國際評比看108課綱：臺灣學生的亮眼表現與教育啟示</a>
+			                <span class="w400 material-symbols-rounded text-success ms-auto" aria-hidden="true">arrow_downward</span>
+			              </div>
+			              <div class="mt-auto">
+			                <div class="hstack gap-2">
+			                  <span class="badge text-primary fw-normal bg-primary bg-opacity-10 me-4 tw:text-[calc(12rem/16)]!">學術著作</span>
+			                  <small class="text-secondary ms-auto tw:text-[calc(12rem/16)]!"><i class="bi bi-eye me-2"></i>63,876</small>
+			                </div>
+			              </div>
+			            </div>
+			          </div>
+			          <div class="card border border-black border-opacity-10 shadow-sm p-3 tw:min-h-[120px]">
+			            <div class="vstack h-100">
+			              <div class="hstack gap-2 lh-sm align-items-start mb-4">
+			                <a class="text-body fw-medium stretched-link me-4 tw:line-clamp-3" href=""><span class="text-primary pe-1">09</span>從國際評比看108課綱：臺灣學生的亮眼表現與教育啟示</a>
+			                <span class="w400 material-symbols-rounded text-primary ms-auto" aria-hidden="true">arrow_upward</span>
+			              </div>
+			              <div class="mt-auto">
+			                <div class="hstack gap-2">
+			                  <span class="badge text-primary fw-normal bg-primary bg-opacity-10 me-4 tw:text-[calc(12rem/16)]!">學術著作</span>
+			                  <small class="text-secondary ms-auto tw:text-[calc(12rem/16)]!"><i class="bi bi-eye me-2"></i>63,876</small>
+			                </div>
+			              </div>
+			            </div>
+			          </div>
+			          <div class="card border border-black border-opacity-10 shadow-sm p-3 tw:min-h-[120px]">
+			            <div class="vstack h-100">
+			              <div class="hstack gap-2 lh-sm align-items-start mb-4">
+			                <a class="text-body fw-medium stretched-link me-4 tw:line-clamp-3" href=""><span class="text-primary pe-1">10</span>從國際評比看108課綱：臺灣學生的亮眼表現與教育啟示</a>
+			                <span class="w400 material-symbols-rounded text-primary ms-auto" aria-hidden="true">arrow_upward</span>
+			              </div>
+			              <div class="mt-auto">
+			                <div class="hstack gap-2">
+			                  <span class="badge text-primary fw-normal bg-primary bg-opacity-10 me-4 tw:text-[calc(12rem/16)]!">學術著作</span>
+			                  <small class="text-secondary ms-auto tw:text-[calc(12rem/16)]!"><i class="bi bi-eye me-2"></i>63,876</small>
+			                </div>
+			              </div>
+			            </div>
+			          </div>
+			        </div>
+			        <div class="hstack text-primary align-items-center justify-content-end my-4 mb-lg-0 pt-lg-1"><span class="fw-medium lh-1 pb-1 me-4 tw:text-[calc(24rem/16)]">總瀏覽人數</span><span class="roboto fw-bold lh-1 tw:text-[calc(32rem/16)]">256,843</span></div>
+			      </div>
+			    </div>
+			    <!-- /hot -->
+			  </div>
+			  <!-- /content -->
+			</section>
+			<!-- /main content -->
+		</main>
+
+		<!-- footer -->
+		<footer class="text-white tw:bg-[#981E32]">
+		  <div id="footer" class="footerBg">
+		    <div class="footerContainer container-lg py-4 py-lg-5 vstack gap-4">
+		      <div class="position-absolute d-none d-lg-inline-block"><a class="btn btn-link text-decoration-none text-white text-nowrap position-absolute" href="#Z" id="AZ" name="Z" title="下方功能區塊" accesskey="Z" style="left: -10px;top: -40px;">:::</a></div>
+		      <div class="overflow-hidden">
+		        <div class="row row-cols-1 row-cols-md-auto g-4 gx-md-5">
+		          <div class="col me-auto me-xxl-5"><img src="img/logo-w.svg" alt="國家教育研究院" width="183"></div>
+		          <div class="col">
+		            <div class="fw-bold my-4 mt-md-0">關於系統</div>
+		            <ul class="list-unstyled vstack gap-3 m-0 tw:text-[calc(14rem/16)]">
+		              <li><a class="text-white" href="">系統簡介</a></li>
+		              <li><a class="text-white" href="">使用說明</a></li>
+		              <li><a class="text-white" href="">常見問題</a></li>
+		            </ul>
+		          </div>
+		          <div class="col">
+		            <div class="fw-bold my-4 mt-md-0">學術資源</div>
+		            <ul class="list-unstyled vstack gap-3 m-0 tw:text-[calc(14rem/16)]">
+		              <li><a class="text-white" href="">學術著作</a></li>
+		              <li><a class="text-white" href="">研究計畫</a></li>
+		              <li><a class="text-white" href="">研究人員</a></li>
+		              <li><a class="text-white" href="">統計數據</a></li>
+		            </ul>
+		          </div>
+		          <div class="col">
+		            <div class="fw-bold my-4 mt-md-0">相關連結</div>
+		            <ul class="list-unstyled vstack gap-3 m-0 tw:text-[calc(14rem/16)]">
+		              <li><a class="text-white" href="">圖書館</a></li>
+		              <li><a class="text-white" href="">綜合查詢</a></li>
+		              <li><a class="text-white" href="">政府研究資料系統</a></li>
+		            </ul>
+		          </div>
+		          <div class="col ms-lg-auto order-last">
+		            <ul class="list-unstyled order-md-first vstack gap-3 mb-2 m-md-0 fw-medium tw:text-[calc(14rem/16)]">
+		              <li class="hstack gap-2"><i class="bi bi-geo-alt"></i>237201 新北市三峽區三樹路 2 號</li>
+		              <li class="hstack gap-2"><i class="bi bi-envelope"></i>message@mail.naer.edu.tw</li>
+		              <li class="hstack gap-2"><i class="bi bi-telephone"></i>02 - 77407890</li>
+		            </ul>
+		          </div>
+		          <div class="col-md-12 vstack order-md-last">
+		            <hr class="opacity-30 tw:border-[#FFFFFF]!">
+		            <small class="d-none d-md-block text-md-end mt-2 tw:text-[calc(12rem/16)]!">Copyright © 2025 國家教育研究院</small>
+		          </div>
+		        </div>
+		        <!-- /row -->
+		      </div>
+		      <!-- /overflow -->
+		    </div>
+		    <!-- /footerContainer -->
+		  </div>
+		  <!-- /footerBg -->
+		  </footer>
+		  <!-- /footer -->
+
+		<script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
+		<script type="text/javascript" src="js/swiper-bundle.min.js"></script>
+		<script>
+			document.addEventListener('DOMContentLoaded', () => {
+				if (document.querySelector('.oneSlide')) {
+					var oneSlide = new Swiper(".oneSlide .swiper", {
+						autoHeight: true,
+						lazy: true,
+						rewind: true,
+						effect: "fade", // only for one slide in perview, more slides will get wrong
+						autoplay: {
+							delay: 5000,
+							disableOnInteraction: false,
+							pauseOnMouseEnter: false
+						},
+					})
+				}
+			});
+		</script>
+	</body>
 
 </html>
