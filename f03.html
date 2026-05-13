@@ -1,0 +1,1189 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>國家圖書館-國家大學論文系統</title>
+		<!-- favicon -->
+		<link rel="shortcut icon" type="image/gif" href="img/blank.gif" />
+		<!-- /favicon -->
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="css/bootstrap-icons.css">
+		<link rel="stylesheet" type="text/css" href="css/tailwind.css">
+		<link rel="stylesheet" type="text/css" href="css/main.min.css">
+		<link rel="stylesheet" type="text/css" href="css/style.min.css">
+	</head>
+
+	<body id="top" class="focus tw:min-h-screen tw:group/check" data-bs-theme="red">
+		<div class="tw:text-center tw:leading-10 tw:text-white tw:bg-pink-900"><noscript class="tw:py-1">您的瀏覽器不支援JavaScript功能，若網頁功能無法正常使用時，請開啟瀏覽器JavaScript狀態！</noscript></div>
+		<!-- header -->
+		<header class="header">
+			<span class="d-none d-lg-inline-block tw:absolute z-1"><a id="gotocenter" class="btn btn-light bg-white visually-hidden-focusable" href="#AC" title="移到主要內容">跳到主要內容</a></span>
+			<!-- container -->
+		  <div class="headerContainer">
+		    <nav class="navbar d-none d-lg-block p-0 tw:bg-[#E8E0DC]">
+		      <div id="topNav" class="topNav w-100 py-1">
+		        <div class="topContainer container-fluid px-sm-5">
+		          <div class="d-flex flex-wrap justify-content-end gap-3 tw:text-[calc(15rem/16)]! tw:**:hover:text-black!">
+		            <div class="tw:relative">
+		              <span class="d-none d-lg-inline-block"><a class="tw:no-underline px-2" href="#U" id="AU" name="U" title="上方功能區塊" accesskey="U">:::</a></span>
+		            </div>
+		            <a class="tw:text-[#66534C]!" href="">網站導覽</a>
+		            <a class="tw:text-[#66534C]!" href="">首頁</a>
+		            <a class="tw:text-[#66534C]!" href="">關於本站</a>
+		            <a class="tw:text-[#66534C]!" href="">聯絡我們</a>
+		            <a class="tw:text-[#66534C]!" href="">申請大量書目</a>
+		            <a class="tw:text-[#66534C]!" href="">國圖首頁</a>
+		            <a class="tw:text-[#66534C]!" href="">常見問題</a>
+		            <a class="tw:text-[#66534C]!" href="">操作說明</a>
+		            <a class="tw:text-[#66534C]!" href="">English</a>
+		            <a class="tw:text-[#66534C]!" href="">FB</a>
+		            <a class="tw:text-[#66534C]!" href="">Ｍobile</a>
+		          </div>
+		          
+		        </div>
+		      </div>
+		    </nav>
+		    <nav class="navBar navbar navbar-expand-lg p-0">
+		      <!-- navbarBg -->
+		      <div class="navbarBg w-100 py-2 p-lg-0 tw:bg-[#FDFCFC] tw:lg:shadow-lg">
+		        <!-- navbarContainer -->
+		        <div class="navbarContainer d-flex flex-lg-row justify-content-between tw:h-[72px] tw:lg:h-[76px] container-fluid px-lg-5">
+		          <!-- Logo -->
+		          <div class="logoBG">
+		            <div class="logoContainer d-flex align-items-center w-100 me-auto h-100">
+		              <a class="logo me-3" href="index.html">
+		                <h1 class="visually-hidden-focusable">國家圖書館-國家大學論文系統</h1>
+		                <img class="w-100" src="img/logo.png" alt="國家圖書館" width="248">
+		              </a>
+		            </div>
+		          </div>
+		          <!-- /Logo -->
+		          <button class="navbar-toggler border-0 d-block d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarOffcanvas" aria-controls="navbarOffcanvas">
+		            <i class="h2 bi bi-list tw:leading-0"></i>
+		            <span class="visually-hidden">開啟選單</span>
+		          </button>
+		          <!-- offcanvas -->
+		          <div id="navbarOffcanvas" class="mainmenuBG offcanvas offcanvas-end border-0 tw:bg-[#E8E0DC]! tw:lg:bg-transparent! tw:max-w-4/5! tw:lg:max-w-full!" tabindex="-1" aria-labelledby="offcanvasTitle">
+		            <div class="mainmenuContainer d-flex flex-column flex-lg-row justify-content-end h-100">
+		              <div class="offcanvas-header">
+		                <h2 id="offcanvasTitle" class="offcanvas-title h5"><span class="visually-hidden"></span></h2>
+		                <button type="button" class="btnClose ms-auto me-2" data-bs-dismiss="offcanvas" aria-label="Close"><i class="bi bi-x-lg"></i></button>
+		              </div>
+		              <ul id="mainmenuAccordion" class="mainmenu nav flex-column flex-lg-row gap-4 gap-lg-5 align-items-center offcanvas-body">
+		                <li class="nav-item flex-shrink-0">
+		                  <a class="nav-link fw-medium px-0 tw:lg:font-normal! tw:lg:text-[calc(18rem/16)]! tw:hover:text-(--bs-red)!" href="">論文檢索</a>
+		                </li>
+		                <li class="nav-item flex-shrink-0">
+		                  <a class="nav-link fw-medium px-0 tw:lg:font-normal! tw:lg:text-[calc(18rem/16)]! tw:hover:text-(--bs-red)!" href="">排行統計</a>
+		                </li>
+		                <li class="nav-item flex-shrink-0">
+		                  <a class="nav-link fw-medium px-0 tw:lg:font-normal! tw:lg:text-[calc(18rem/16)]! tw:hover:text-(--bs-red)!" href="">我的書車</a>
+		                </li>
+		              </ul>
+		            </div>
+		            <div class="vstack align-items-center gap-3 mb-5 d-lg-none tw:**:text-[calc(14rem/16)]!">
+		              <a class="tw:text-[#66534C]!" href="">網站導覽</a>
+		              <a class="tw:text-[#66534C]!" href="">關於本站</a>
+		              <a class="tw:text-[#66534C]!" href="">聯絡我們</a>
+		              <a class="tw:text-[#66534C]!" href="">申請大量書目</a>
+		              <a class="tw:text-[#66534C]!" href="">常見問題</a>
+		            </div>
+		          </div>
+		          <!-- /offcanvas -->
+		        </div>
+		        <!-- /navbarContainer -->
+		      </div>
+		      <!-- /navbarBg -->
+		    </nav>
+		  </div>
+		  <!-- /container -->
+		</header>
+		<!-- /header -->
+
+		<main class="py-4 py-lg-5 position-relative tw:group/all tw:[&_.btn]:[--bs-border-radius:8px] tw:min-h-screen">
+			<div class="container-lg vstack gap-4 position-relative">
+			  
+			  <!-- accesskey -->
+			  <div class="position-absolute d-none d-lg-inline-block">
+			    <a class="ms-n4" href="#C" id="AC" name="C" title="中央內容區塊" accesskey="C">:::</a>
+			  </div>
+			  <!-- /accesskey -->
+			  
+			  
+			  <section class="vstack gap-3">
+			    <div class="row g-2 gy-3">
+			      <div class="col-md">
+			        <label class="visually-hidden" for="search">深度檢索</label>
+			        <input id="search" class="form-control rounded-1 h-100 tw:placeholder:text-black!" type="text" placeholder="深度檢索" aria-label="Search">
+			      </div>
+			      <div class="col-md-auto hstack gap-3 d-md-none">
+			        <button class="btn fw-medium tw:text-[calc(12rem/16)]! tw:bg-[#DFCFB1]! tw:rounded-xl!" type="button">前12個月</button>
+			        <button class="btn fw-medium tw:text-[calc(12rem/16)]! tw:bg-[#DFCFB1]! tw:rounded-xl!" type="button">授權公開</button>
+			      </div>
+			      <div class="col-md-auto hstack justify-content-center justify-content-md-start gap-3">
+			        <button class="btn btn-outline-red d-md-none" type="button" data-bs-toggle="modal" data-bs-target="#modalFilter"><span class="material-symbols-outlined me-2">filter_alt</span>篩選條件</button>
+			        <button class="btn btn-red px-md-5 tw:lg:min-h-12 tw:lg:text-[calc(18rem/16)]!" type="submit"><span class="material-symbols-outlined me-2">search</span>檢索</button>
+			      </div>
+			    </div>
+			  </section>
+			  <section>
+			    <div class="row g-2 gx-md-4 align-items-center">
+			      <div class="col-md-4 col-xxl-3"><p class="text-center text-md-start">找到721筆相關論文資料</p></div>
+			      <div class="col-md-8 col-xxl-9">
+			        <div class="hstack flex-wrap gap-3 d-none d-md-flex">
+			          <div class="bg-white px-2 me-auto">
+			            <div class="hstack gap-2 tw:h-8.5 tw:**:text-[calc(15rem/16)]!">
+			              <input id="checkall" class="check form-check-input rounded-1 m-0" type="checkbox" value="">
+			              <label class="form-check-label lh-1" for="checkall">全部勾選</label>
+			            </div>
+			          </div>
+			          <label class="form-label m-0" for="inputSort">排序</label>
+			          <select id="inputSort" class="form-select rounded-1 w-auto tw:border-[#888888]! tw:min-w-30 tw:xxl:min-w-45.5 tw:min-h-12">
+			            <option value="" selected>相關性</option>
+			            <option value="">item</option>
+			          </select>
+			          <div class="btn-group rounded-1 z-0 p-1 tw:bg-[#E8E0DC]" role="group" aria-label="群組顯示按鈕">
+			            <div class="rounded-1 tw:has-checked:bg-white">
+			              <input id="btnradio1" class="btn-check" type="radio" name="btnradio" autocomplete="off" checked>
+			              <label class="btn border-0 px-4 tw:h-10" for="btnradio1"><span class="material-symbols-outlined fs-4 mt-n1">format_list_bulleted</span><span class="visually-hidden">列表顯示</span></label>
+			            </div>
+			            <div class="rounded-1 tw:has-checked:bg-white">
+			              <input id="btnradio2" class="btn-check" type="radio" name="btnradio" autocomplete="off">
+			              <label class="btn border-0 px-4 tw:h-10" for="btnradio2"><span class="material-symbols-outlined fs-4 mt-n1">grid_view</span><span class="visually-hidden">網格顯示</span></label>
+			            </div>
+			          </div>
+			        </div>
+			      </div>
+			    </div>
+			  </section>
+			  <section class="vstack gap-3 tw:pb-12 tw:md:p-0">
+			    <div class="row g-2 gx-md-4">
+			      <div class="col-md-4 col-xxl-3">
+			        <div id="modalFilter" class="modal fade tw:group/modal tw:md:static! tw:md:block! tw:md:opacity-100! tw:md:overflow-y-auto tw:md:h-666" tabindex="-1" aria-labelledby="modalLabel" aria-hidden="true">
+			          <div class="modal-dialog px-2 p-md-0 m-md-0 tw:md:max-w-full! tw:md:transform-none! tw:md:overflow-hidden">
+			            <div class="modal-content position-relative border-0">
+			              <div class="modal-header border-0 pb-0 d-md-none">
+			                <p id="modalLabel" class="modal-title fs-6 fw-medium me-auto">進階篩選</p>
+			                <button class="btn text-red fw-medium px-0 tw:text-[calc(14rem/16)]!" type="button" data-bs-dismiss="modal" aria-label="Close">確認</button>
+			              </div>
+			              <div class="modal-body vstack gap-4 overflow-auto tw:md:max-h-166 tw:md:pb-23! tw:[scrollbar-color:rgba(0,0,0,0.1)_transparent]">
+			                <fieldset class="card card-body vstack flex-wrap gap-2 tw:group-[.show]/modal:border-0! tw:group-[.show]/modal:p-0!">
+			                  <legend class="fs-6 fw-bold m-0">出版日期</legend>
+			                  <div class="hstack flex-wrap gap-2 row-gap-0 tw:**:text-[calc(15rem/16)]!">
+			                    <div class="form-check m-0">
+			                      <input id="checka1" class="form-check-input rounded-1" type="checkbox" value="">
+			                      <label class="form-check-label" for="checka1">前12個月</label>
+			                    </div>
+			                    <span class="tw:before:content-['('] tw:after:content-[')']">147</span>
+			                  </div>
+			                  <div class="hstack flex-wrap gap-2 row-gap-0 tw:**:text-[calc(15rem/16)]!">
+			                    <div class="form-check m-0">
+			                      <input id="checka2" class="form-check-input rounded-1" type="checkbox" value="">
+			                      <label class="form-check-label" for="checka2">前5年</label>
+			                    </div>
+			                    <span class="tw:before:content-['('] tw:after:content-[')']">537</span>
+			                  </div>
+			                  <div class="hstack flex-wrap gap-2 row-gap-0 tw:**:text-[calc(15rem/16)]!">
+			                    <div class="form-check m-0">
+			                      <input id="checka3" class="form-check-input rounded-1" type="checkbox" value="">
+			                      <label class="form-check-label" for="checka3">前10年</label>
+			                    </div>
+			                    <span class="tw:before:content-['('] tw:after:content-[')']">667</span>
+			                  </div>
+			                  <div class="hstack flex-wrap gap-2 row-gap-0 tw:**:text-[calc(15rem/16)]! tw:peer">
+			                    <div class="form-check m-0">
+			                      <input id="checka4" class="form-check-input rounded-1" type="checkbox" value="">
+			                      <label class="form-check-label" for="checka4">自定日期範圍</label>
+			                    </div>
+			                  </div>
+			                  <div class="vstack gap-3 tw:hidden! tw:peer-has-checked:flex!">
+			                    <hr class="opacity-100 m-0 tw:border-[#B6A19A]">
+			                    <div class="hstack flex-wrap gap-2 row-gap-0 tw:**:text-[calc(15rem/16)]!">
+			                      <input id="inputa1" class="form-control border-0 tw:w-21! tw:bg-[#F4F1F0]! tw:placeholder:text-black!" type="text" placeholder="開始年份">
+			                      <label class="visually-hidden" for="inputa1">開始年份</label>
+			                      至
+			                      <input id="inputa2" class="form-control border-0 tw:w-21! tw:bg-[#F4F1F0]! tw:placeholder:text-black!" type="text" placeholder="結束年份">
+			                      <label class="visually-hidden" for="inputa2">結束年份</label>
+			                    </div>
+			                  </div>
+			                </fieldset>
+			                <fieldset class="card card-body vstack flex-wrap gap-2 tw:group-[.show]/modal:border-0! tw:group-[.show]/modal:p-0!">
+			                  <legend class="fs-6 fw-bold m-0">論文狀態</legend>
+			                  <div class="hstack flex-wrap gap-2 row-gap-0 tw:**:text-[calc(15rem/16)]!">
+			                    <div class="form-check m-0">
+			                      <input id="checkb1" class="form-check-input rounded-1" type="checkbox" value="">
+			                      <label class="form-check-label" for="checkb1">授權公開</label>
+			                    </div>
+			                    <span class="tw:before:content-['('] tw:after:content-[')']">147</span>
+			                  </div>
+			                  <div class="hstack flex-wrap gap-2 row-gap-0 tw:**:text-[calc(15rem/16)]!">
+			                    <div class="form-check m-0">
+			                      <input id="checkb2" class="form-check-input rounded-1" type="checkbox" value="">
+			                      <label class="form-check-label" for="checkb2">延後公開</label>
+			                    </div>
+			                    <span class="tw:before:content-['('] tw:after:content-[')']">537</span>
+			                  </div>
+			                </fieldset>
+			                <fieldset class="card card-body vstack flex-wrap gap-2 tw:group-[.show]/modal:border-0! tw:group-[.show]/modal:p-0!">
+			                  <legend class="fs-6 fw-bold m-0">主題</legend>
+			                  <div class="hstack flex-wrap gap-2 row-gap-0 tw:**:text-[calc(15rem/16)]!">
+			                    <div class="form-check m-0">
+			                      <input id="checkc1" class="form-check-input rounded-1" type="checkbox" value="">
+			                      <label class="form-check-label" for="checkc1">深度學習</label>
+			                    </div>
+			                    <span class="tw:before:content-['('] tw:after:content-[')']">147</span>
+			                  </div>
+			                  <div class="hstack flex-wrap gap-2 row-gap-0 tw:**:text-[calc(15rem/16)]!">
+			                    <div class="form-check m-0">
+			                      <input id="checkc2" class="form-check-input rounded-1" type="checkbox" value="">
+			                      <label class="form-check-label" for="checkc2">機器學習</label>
+			                    </div>
+			                    <span class="tw:before:content-['('] tw:after:content-[')']">537</span>
+			                  </div>
+			                  <div class="hstack flex-wrap gap-2 row-gap-0 tw:**:text-[calc(15rem/16)]!">
+			                    <div class="form-check m-0">
+			                      <input id="checkc3" class="form-check-input rounded-1" type="checkbox" value="">
+			                      <label class="form-check-label" for="checkc3">人工智慧</label>
+			                    </div>
+			                    <span class="tw:before:content-['('] tw:after:content-[')']">537</span>
+			                  </div>
+			                  <div class="hstack flex-wrap gap-2 row-gap-0 tw:**:text-[calc(15rem/16)]!">
+			                    <div class="form-check m-0">
+			                      <input id="checkc4" class="form-check-input rounded-1" type="checkbox" value="">
+			                      <label class="form-check-label" for="checkc4">神經網路</label>
+			                    </div>
+			                    <span class="tw:before:content-['('] tw:after:content-[')']">537</span>
+			                  </div>
+			                  <div class="hstack flex-wrap gap-2 row-gap-0 tw:**:text-[calc(15rem/16)]!">
+			                    <div class="form-check m-0">
+			                      <input id="checkc5" class="form-check-input rounded-1" type="checkbox" value="">
+			                      <label class="form-check-label" for="checkc5">資料探勘</label>
+			                    </div>
+			                    <span class="tw:before:content-['('] tw:after:content-[')']">537</span>
+			                  </div>
+			                  <div class="hstack flex-wrap gap-2 row-gap-0 tw:**:text-[calc(15rem/16)]!">
+			                    <div class="form-check m-0">
+			                      <input id="checkc6" class="form-check-input rounded-1" type="checkbox" value="">
+			                      <label class="form-check-label" for="checkc6">自然語言處理</label>
+			                    </div>
+			                    <span class="tw:before:content-['('] tw:after:content-[')']">537</span>
+			                  </div>
+			                  <div class="hstack">
+			                    <button class="btn btn-link p-0" type="button" data-bs-toggle="collapse" data-bs-target="#collapseMore1" aria-expanded="false" aria-controls="collapseMore1">更多<span class="material-symbols-outlined">arrow_forward_ios</span></button>
+			                  </div>
+			                  <div id="collapseMore1" class="collapse">
+			                    <div class="hstack flex-wrap gap-2">
+			                      <div class="form-check m-0">
+			                        <input id="morea1" class="form-check-input rounded-1" type="checkbox" value="">
+			                        <label class="form-check-label" for="morea1">item</label>
+			                      </div>
+			                      <span class="tw:before:content-['('] tw:after:content-[')']">100</span>
+			                    </div>
+			                  </div>
+			                </fieldset>
+			                <fieldset class="card card-body vstack flex-wrap gap-2 tw:group-[.show]/modal:border-0! tw:group-[.show]/modal:p-0!">
+			                  <legend class="fs-6 fw-bold m-0">論文種類</legend>
+			                  <div class="hstack flex-wrap gap-2 row-gap-0 tw:**:text-[calc(15rem/16)]!">
+			                    <div class="form-check m-0">
+			                      <input id="checkd1" class="form-check-input rounded-1" type="checkbox" value="">
+			                      <label class="form-check-label" for="checkd1">學術論文</label>
+			                    </div>
+			                    <span class="tw:before:content-['('] tw:after:content-[')']">147</span>
+			                  </div>
+			                  <div class="hstack flex-wrap gap-2 row-gap-0 tw:**:text-[calc(15rem/16)]!">
+			                    <div class="form-check m-0">
+			                      <input id="checkd2" class="form-check-input rounded-1" type="checkbox" value="">
+			                      <label class="form-check-label" for="checkd2">技術報告</label>
+			                    </div>
+			                    <span class="tw:before:content-['('] tw:after:content-[')']">147</span>
+			                  </div>
+			                  <div class="hstack flex-wrap gap-2 row-gap-0 tw:**:text-[calc(15rem/16)]!">
+			                    <div class="form-check m-0">
+			                      <input id="checkd3" class="form-check-input rounded-1" type="checkbox" value="">
+			                      <label class="form-check-label" for="checkd3">作品連同書面報告</label>
+			                    </div>
+			                    <span class="tw:before:content-['('] tw:after:content-[')']">147</span>
+			                  </div>
+			                  <div class="hstack flex-wrap gap-2 row-gap-0 tw:**:text-[calc(15rem/16)]!">
+			                    <div class="form-check m-0">
+			                      <input id="checkd4" class="form-check-input rounded-1" type="checkbox" value="">
+			                      <label class="form-check-label" for="checkd4">成就證明連同書面報告</label>
+			                    </div>
+			                    <span class="tw:before:content-['('] tw:after:content-[')']">147</span>
+			                  </div>
+			                  <div class="hstack flex-wrap gap-2 row-gap-0 tw:**:text-[calc(15rem/16)]!">
+			                    <div class="form-check m-0">
+			                      <input id="checkd5" class="form-check-input rounded-1" type="checkbox" value="">
+			                      <label class="form-check-label" for="checkd5">專業實務報告</label>
+			                    </div>
+			                    <span class="tw:before:content-['('] tw:after:content-[')']">147</span>
+			                  </div>
+			                </fieldset>
+			                <fieldset class="card card-body vstack flex-wrap gap-2 tw:group-[.show]/modal:border-0! tw:group-[.show]/modal:p-0!">
+			                  <legend class="fs-6 fw-bold m-0">語言</legend>
+			                  <div class="hstack flex-wrap gap-2 row-gap-0 tw:**:text-[calc(15rem/16)]!">
+			                    <div class="form-check m-0">
+			                      <input id="checke1" class="form-check-input rounded-1" type="checkbox" value="">
+			                      <label class="form-check-label" for="checke1">中文</label>
+			                    </div>
+			                    <span class="tw:before:content-['('] tw:after:content-[')']">147</span>
+			                  </div>
+			                  <div class="hstack flex-wrap gap-2 row-gap-0 tw:**:text-[calc(15rem/16)]!">
+			                    <div class="form-check m-0">
+			                      <input id="checke2" class="form-check-input rounded-1" type="checkbox" value="">
+			                      <label class="form-check-label" for="checke2">英文</label>
+			                    </div>
+			                    <span class="tw:before:content-['('] tw:after:content-[')']">147</span>
+			                  </div>
+			                </fieldset>
+			                <fieldset class="card card-body vstack flex-wrap gap-2 tw:group-[.show]/modal:border-0! tw:group-[.show]/modal:p-0!">
+			                  <legend class="fs-6 fw-bold m-0">學位類別</legend>
+			                  <div class="hstack flex-wrap gap-2 row-gap-0 tw:**:text-[calc(15rem/16)]!">
+			                    <div class="form-check m-0">
+			                      <input id="checkf1" class="form-check-input rounded-1" type="checkbox" value="">
+			                      <label class="form-check-label" for="checkf1">全部</label>
+			                    </div>
+			                    <span class="tw:before:content-['('] tw:after:content-[')']">147</span>
+			                  </div>
+			                  <div class="hstack flex-wrap gap-2 row-gap-0 tw:**:text-[calc(15rem/16)]!">
+			                    <div class="form-check m-0">
+			                      <input id="checkf2" class="form-check-input rounded-1" type="checkbox" value="">
+			                      <label class="form-check-label" for="checkf2">碩士論文</label>
+			                    </div>
+			                    <span class="tw:before:content-['('] tw:after:content-[')']">147</span>
+			                  </div>
+			                  <div class="hstack flex-wrap gap-2 row-gap-0 tw:**:text-[calc(15rem/16)]!">
+			                    <div class="form-check m-0">
+			                      <input id="checkf3" class="form-check-input rounded-1" type="checkbox" value="">
+			                      <label class="form-check-label" for="checkf3">博士論文</label>
+			                    </div>
+			                    <span class="tw:before:content-['('] tw:after:content-[')']">147</span>
+			                  </div>
+			                </fieldset>
+			                <div class="card card-body vstack flex-wrap gap-2 tw:group-[.show]/modal:border-0! tw:group-[.show]/modal:p-0!">
+			                  <p class="fs-6 fw-bold m-0">聚類分析</p>
+			                  <ul class="list-unstyled m-0 tw:**:text-[calc(15rem/16)]!">
+			                    <li>
+			                      <details class="vstack gap-1 tw:group/list">
+			                        <summary class="hstack gap-2 rounded px-1">
+			                          <span class="hstack tw:min-w-5.25">
+			                            <span class="material-symbols-outlined tw:group-open/list:hidden!" style="font-size:1.3rem !important">add_box</span>
+			                            <span class="material-symbols-outlined tw:hidden! tw:group-open/list:block!" style="font-size:1.3rem !important">indeterminate_check_box</span>
+			                          </span>
+			                          <span>機器學習</span>
+			                          <span class="tw:before:content-['('] tw:after:content-[')']">57</span>
+			                        </summary>
+			                        <!-- 第二層內容 -->
+			                        <ul class="list-unstyled vstack gap-1 ms-4">
+			                          <li>
+			                            <details class="tw:group/list2">
+			                              <summary class="hstack gap-2 rounded px-1">
+			                                <span class="hstack tw:min-w-5.25"></span>
+			                                <span>Item</span>
+			                                <span class="tw:before:content-['('] tw:after:content-[')']">7</span>
+			                              </summary>
+			                            </details>
+			                          </li>
+			                          <li>
+			                            <details class="tw:group/list2">
+			                              <summary class="hstack gap-2 rounded px-1">
+			                                <span class="hstack tw:min-w-5.25">
+			                                  <span class="material-symbols-outlined tw:group-open/list2:hidden!" style="font-size:1.3rem !important">add_box</span>
+			                                  <span class="material-symbols-outlined tw:hidden! tw:group-open/list2:block!" style="font-size:1.3rem !important">indeterminate_check_box</span>
+			                                </span>
+			                                <span>Item</span>
+			                                <span class="tw:before:content-['('] tw:after:content-[')']">7</span>
+			                              </summary>
+			                              <!-- 第三層內容 -->
+			                              <ul class="list-unstyled vstack gap-1 ms-4">
+			                                <li>
+			                                  <details class="tw:group/list2">
+			                                    <summary class="hstack gap-2 rounded px-1">
+			                                      <span class="hstack tw:min-w-5.25"></span>
+			                                      <span>Item</span>
+			                                      <span class="tw:before:content-['('] tw:after:content-[')']">4</span>
+			                                    </summary>
+			                                  </details>
+			                                </li>
+			                                <li>
+			                                  <details class="tw:group/list2">
+			                                    <summary class="hstack gap-2 rounded px-1">
+			                                      <span class="hstack tw:min-w-5.25"></span>
+			                                      <span>Item</span>
+			                                      <span class="tw:before:content-['('] tw:after:content-[')']">3</span>
+			                                    </summary>
+			                                  </details>
+			                                </li>
+			                              </ul>
+			                            </details>
+			                          </li>
+			                        </ul>
+			                      </details>
+			                    </li>
+			                    <li>
+			                      <details class="vstack gap-1 tw:group/list">
+			                        <summary class="hstack gap-2 rounded px-1">
+			                          <span class="hstack tw:min-w-5.25">
+			                            <span class="material-symbols-outlined tw:group-open/list:hidden!" style="font-size:1.3rem !important">add_box</span>
+			                            <span class="material-symbols-outlined tw:hidden! tw:group-open/list:block!" style="font-size:1.3rem !important">indeterminate_check_box</span>
+			                          </span>
+			                          <span>類神經網絡</span>
+			                          <span class="tw:before:content-['('] tw:after:content-[')']">37</span>
+			                        </summary>
+			                        <!-- 第二層內容 -->
+			                        <ul class="list-unstyled vstack gap-1 ms-4">
+			                          <li>
+			                            <details class="tw:group/list2">
+			                              <summary class="hstack gap-2 rounded px-1">
+			                                <span class="hstack tw:min-w-5.25"></span>
+			                                <span>Item</span>
+			                                <span class="tw:before:content-['('] tw:after:content-[')']">7</span>
+			                              </summary>
+			                            </details>
+			                          </li>
+			                          <li>
+			                            <details class="tw:group/list2">
+			                              <summary class="hstack gap-2 rounded px-1">
+			                                <span class="hstack tw:min-w-5.25">
+			                                  <span class="material-symbols-outlined tw:group-open/list2:hidden!" style="font-size:1.3rem !important">add_box</span>
+			                                  <span class="material-symbols-outlined tw:hidden! tw:group-open/list2:block!" style="font-size:1.3rem !important">indeterminate_check_box</span>
+			                                </span>
+			                                <span>Item</span>
+			                                <span class="tw:before:content-['('] tw:after:content-[')']">7</span>
+			                              </summary>
+			                              <!-- 第三層內容 -->
+			                              <ul class="list-unstyled vstack gap-1 ms-4">
+			                                <li>
+			                                  <details class="tw:group/list2">
+			                                    <summary class="hstack gap-2 rounded px-1">
+			                                      <span class="hstack tw:min-w-5.25"></span>
+			                                      <span>Item</span>
+			                                      <span class="tw:before:content-['('] tw:after:content-[')']">4</span>
+			                                    </summary>
+			                                  </details>
+			                                </li>
+			                                <li>
+			                                  <details class="tw:group/list2">
+			                                    <summary class="hstack gap-2 rounded px-1">
+			                                      <span class="hstack tw:min-w-5.25"></span>
+			                                      <span>Item</span>
+			                                      <span class="tw:before:content-['('] tw:after:content-[')']">3</span>
+			                                    </summary>
+			                                  </details>
+			                                </li>
+			                              </ul>
+			                            </details>
+			                          </li>
+			                        </ul>
+			                      </details>
+			                    </li>
+			                    <li>
+			                      <details class="vstack gap-1 tw:group/list" open>
+			                        <summary class="hstack gap-2 rounded px-1">
+			                          <span class="hstack tw:min-w-5.25">
+			                            <span class="material-symbols-outlined tw:group-open/list:hidden!" style="font-size:1.3rem !important">add_box</span>
+			                            <span class="material-symbols-outlined tw:hidden! tw:group-open/list:block!" style="font-size:1.3rem !important">indeterminate_check_box</span>
+			                          </span>
+			                          <span>人工智慧</span>
+			                          <span class="tw:before:content-['('] tw:after:content-[')']">36</span>
+			                        </summary>
+			                        <!-- 第二層內容 -->
+			                        <ul class="list-unstyled vstack gap-1 ms-4">
+			                          <li>
+			                            <details class="tw:group/list2">
+			                              <summary class="hstack gap-2 rounded px-1">
+			                                <span class="hstack tw:min-w-5.25"></span>
+			                                <span>專家系統</span>
+			                                <span class="tw:before:content-['('] tw:after:content-[')']">1</span>
+			                              </summary>
+			                            </details>
+			                          </li>
+			                          <li>
+			                            <details class="tw:group/list2">
+			                              <summary class="hstack gap-2 rounded px-1">
+			                                <span class="hstack tw:min-w-5.25">
+			                                  <span class="material-symbols-outlined tw:group-open/list2:hidden!" style="font-size:1.3rem !important">add_box</span>
+			                                  <span class="material-symbols-outlined tw:hidden! tw:group-open/list2:block!" style="font-size:1.3rem !important">indeterminate_check_box</span>
+			                                </span>
+			                                <span>知識庫</span>
+			                                <span class="tw:before:content-['('] tw:after:content-[')']">7</span>
+			                              </summary>
+			                              <!-- 第三層內容 -->
+			                              <ul class="list-unstyled vstack gap-1 ms-4">
+			                                <li>
+			                                  <details class="tw:group/list2">
+			                                    <summary class="hstack gap-2 rounded px-1">
+			                                      <span class="hstack tw:min-w-5.25"></span>
+			                                      <span>Item</span>
+			                                      <span class="tw:before:content-['('] tw:after:content-[')']">4</span>
+			                                    </summary>
+			                                  </details>
+			                                </li>
+			                                <li>
+			                                  <details class="tw:group/list2">
+			                                    <summary class="hstack gap-2 rounded px-1">
+			                                      <span class="hstack tw:min-w-5.25"></span>
+			                                      <span>Item</span>
+			                                      <span class="tw:before:content-['('] tw:after:content-[')']">3</span>
+			                                    </summary>
+			                                  </details>
+			                                </li>
+			                              </ul>
+			                            </details>
+			                          </li>
+			                          <li>
+			                            <details class="tw:group/list2">
+			                              <summary class="hstack gap-2 rounded px-1">
+			                                <span class="hstack tw:min-w-5.25"></span>
+			                                <span>知識管理</span>
+			                                <span class="tw:before:content-['('] tw:after:content-[')']">4</span>
+			                              </summary>
+			                            </details>
+			                          </li>
+			                          <li>
+			                            <details class="tw:group/list2">
+			                              <summary class="hstack gap-2 rounded px-1">
+			                                <span class="hstack tw:min-w-5.25"></span>
+			                                <span>本體論</span>
+			                                <span class="tw:before:content-['('] tw:after:content-[')']">3</span>
+			                              </summary>
+			                            </details>
+			                          </li>
+			                        </ul>
+			                      </details>
+			                    </li>
+			                    <li>
+			                      <details class="vstack gap-1 tw:group/list">
+			                        <summary class="hstack gap-2 rounded px-1">
+			                          <span class="hstack tw:min-w-5.25">
+			                            <span class="material-symbols-outlined tw:group-open/list:hidden!" style="font-size:1.3rem !important">add_box</span>
+			                            <span class="material-symbols-outlined tw:hidden! tw:group-open/list:block!" style="font-size:1.3rem !important">indeterminate_check_box</span>
+			                          </span>
+			                          <span>影像辨識</span>
+			                          <span class="tw:before:content-['('] tw:after:content-[')']">23</span>
+			                        </summary>
+			                        <!-- 第二層內容 -->
+			                        <ul class="list-unstyled vstack gap-1 ms-4">
+			                          <li>
+			                            <details class="tw:group/list2">
+			                              <summary class="hstack gap-2 rounded px-1">
+			                                <span class="hstack tw:min-w-5.25"></span>
+			                                <span>Item</span>
+			                                <span class="tw:before:content-['('] tw:after:content-[')']">7</span>
+			                              </summary>
+			                            </details>
+			                          </li>
+			                          <li>
+			                            <details class="tw:group/list2">
+			                              <summary class="hstack gap-2 rounded px-1">
+			                                <span class="hstack tw:min-w-5.25">
+			                                  <span class="material-symbols-outlined tw:group-open/list2:hidden!" style="font-size:1.3rem !important">add_box</span>
+			                                  <span class="material-symbols-outlined tw:hidden! tw:group-open/list2:block!" style="font-size:1.3rem !important">indeterminate_check_box</span>
+			                                </span>
+			                                <span>Item</span>
+			                                <span class="tw:before:content-['('] tw:after:content-[')']">7</span>
+			                              </summary>
+			                              <!-- 第三層內容 -->
+			                              <ul class="list-unstyled vstack gap-1 ms-4">
+			                                <li>
+			                                  <details class="tw:group/list2">
+			                                    <summary class="hstack gap-2 rounded px-1">
+			                                      <span class="hstack tw:min-w-5.25"></span>
+			                                      <span>Item</span>
+			                                      <span class="tw:before:content-['('] tw:after:content-[')']">4</span>
+			                                    </summary>
+			                                  </details>
+			                                </li>
+			                                <li>
+			                                  <details class="tw:group/list2">
+			                                    <summary class="hstack gap-2 rounded px-1">
+			                                      <span class="hstack tw:min-w-5.25"></span>
+			                                      <span>Item</span>
+			                                      <span class="tw:before:content-['('] tw:after:content-[')']">3</span>
+			                                    </summary>
+			                                  </details>
+			                                </li>
+			                              </ul>
+			                            </details>
+			                          </li>
+			                        </ul>
+			                      </details>
+			                    </li>
+			                  </ul>
+			                </div>
+			              </div>
+			              <div class="modal-footer position-absolute bg-white bottom-0 w-100 d-none d-md-flex tw:shadow-[0px_-1px_21px_0px_rgba(0,0,0,0.25)]">
+			                <button type="button" class="btn btn-outline-red px-lg-4">重設</button>
+			                <button type="button" class="btn btn-red px-lg-4">進行篩選</button>
+			              </div>
+			            </div>
+			          </div>
+			        </div>
+			      </div>
+			      <div class="col-md-8 col-xxl-9">
+			        <div class="vstack gap-4">
+			          <div class="card card-body border-0 rounded-3 vstack gap-4 p-xl-4 tw:shadow-md tw:xl:px-10!">
+			            <div class="hstack flex-wrap gap-3 tw:**:text-[calc(15rem/16)]!">
+			              <div class="px-2 tw:bg-[#F4F1F0]">
+			                <div class="hstack gap-2 tw:leading-4.5! tw:px-3! tw:py-2!">
+			                  <input id="check1" class="check form-check-input rounded-1 m-0" type="checkbox" value="">
+			                  <label class="form-check-label" for="check1">選取</label>
+			                </div>
+			              </div>
+			              <span class="hstack tw:leading-4.5! tw:px-3! tw:py-2! tw:bg-[#F4F1F0]">學術論文</span>
+			              <span class="ms-auto">被引用數 12</span>
+			            </div>
+			            <div>
+			              <h2 class="fw-bold tw:text-[calc(20rem/16)]!">出版基於深度學習的自然語言處理技術再智慧教育系統中的應用與效能評估</h2>
+			              <p class="hstack flex-wrap gap-2 m-0 tw:**:text-[calc(15rem/16)]!">
+			                <span>110</span>
+			                <span>國立台灣大學</span>
+			                <span>資訊工程研究所</span>
+			                <span>王小明</span>
+			                <span>156頁</span>
+			                <span>指導教授：李大華</span>
+			              </p>
+			            </div>
+			            <p class="m-0 tw:text-[calc(15rem/16)]!">摘要說明文字摘要說明文字摘要說明文字摘要說明文字摘要說明文字摘要說明文字摘要說明文字摘要說明文字摘要說明文字摘要說明文字摘要說明文字摘要說明文字摘要說明文字摘要說明文字摘要說明文字摘要說明文字摘要說明文字摘要說明文字摘要說明文字摘要說明文字摘要說明文字摘要說明文字摘要說明文字摘要說明文字摘要說明文字摘要說明文字摘要說明文字摘要說明文字</p>
+			            <div class="hstack flex-wrap gap-2 tw:**:text-[calc(15rem/16)]!">
+			              <span class="badge text-body tw:bg-[#F4E7E7] tw:px-3! tw:py-2! tw:leading-4.5!">深度學習</span>
+			              <span class="badge text-body tw:bg-[#F4E7E7] tw:px-3! tw:py-2! tw:leading-4.5!">關鍵字</span>
+			              <span class="badge text-body tw:bg-[#F4E7E7] tw:px-3! tw:py-2! tw:leading-4.5!">關鍵字</span>
+			              <span class="badge text-body tw:bg-[#F4E7E7] tw:px-3! tw:py-2! tw:leading-4.5!">關鍵字</span>
+			              <span class="badge text-body tw:bg-[#F4E7E7] tw:px-3! tw:py-2! tw:leading-4.5!">關鍵字</span>
+			            </div>
+			            <div class="hstack flex-wrap gap-2">
+			              <button class="btn btn-light tw:bg-[#F4F1F0]!" type="button"><span class="material-symbols-outlined fs-5 me-2">book_2</span>查看詳情</button>
+			              <button class="btn btn-light tw:bg-[#F4F1F0]!" type="button" data-bs-toggle="modal" data-bs-target="#modalDownload"><span class="material-symbols-outlined fs-5 me-2">arrow_circle_down</span>下載全文</button>
+			              <button class="btn btn-light tw:bg-[#F4F1F0]!" type="button"><span class="material-symbols-outlined fs-5 me-2">favorite</span>加入書車</button>
+			              <button class="btn btn-light tw:bg-[#F4F1F0]!" type="button" data-bs-toggle="modal" data-bs-target="#modalQuote"><span class="material-symbols-outlined fs-5 me-2">thermostat_carbon</span>引用格式</button>
+			            </div>
+			          </div>
+			          <div class="card card-body border-0 rounded-3 vstack gap-4 p-xl-4 tw:shadow-md tw:xl:px-10!">
+			            <div class="alert m-0 tw:border-2! tw:border-[#9FC0E5]!" role="status">延後公開：全文將於2025年12月31日後公開</div>
+			            <div class="hstack flex-wrap gap-3 tw:**:text-[calc(15rem/16)]!">
+			              <div class="px-2 tw:bg-[#F4F1F0]">
+			                <div class="hstack gap-2 tw:leading-4.5! tw:px-3! tw:py-2!">
+			                  <input id="check2" class="check form-check-input rounded-1 m-0" type="checkbox" value="">
+			                  <label class="form-check-label" for="check2">選取</label>
+			                </div>
+			              </div>
+			              <span class="hstack tw:leading-4.5! tw:px-3! tw:py-2! tw:bg-[#F4F1F0]">學術論文</span>
+			              <span class="ms-auto">被引用數 12</span>
+			            </div>
+			            <div>
+			              <h2 class="fw-bold tw:text-[calc(20rem/16)]!">出版基於深度學習的自然語言處理技術再智慧教育系統中的應用與效能評估</h2>
+			              <p class="hstack flex-wrap gap-2 m-0 tw:**:text-[calc(15rem/16)]!">
+			                <span>110</span>
+			                <span>國立台灣大學</span>
+			                <span>資訊工程研究所</span>
+			                <span>王小明</span>
+			                <span>156頁</span>
+			                <span>指導教授：李大華</span>
+			              </p>
+			            </div>
+			            <p class="m-0 tw:text-[calc(15rem/16)]!">摘要說明文字摘要說明文字摘要說明文字摘要說明文字摘要說明文字摘要說明文字摘要說明文字摘要說明文字摘要說明文字摘要說明文字摘要說明文字摘要說明文字摘要說明文字摘要說明文字摘要說明文字摘要說明文字摘要說明文字摘要說明文字摘要說明文字摘要說明文字摘要說明文字摘要說明文字摘要說明文字摘要說明文字摘要說明文字摘要說明文字摘要說明文字摘要說明文字</p>
+			            <div class="hstack flex-wrap gap-2 tw:**:text-[calc(15rem/16)]!">
+			              <span class="badge text-body tw:bg-[#F4E7E7] tw:px-3! tw:py-2! tw:leading-4.5!">深度學習</span>
+			              <span class="badge text-body tw:bg-[#F4E7E7] tw:px-3! tw:py-2! tw:leading-4.5!">關鍵字</span>
+			              <span class="badge text-body tw:bg-[#F4E7E7] tw:px-3! tw:py-2! tw:leading-4.5!">關鍵字</span>
+			              <span class="badge text-body tw:bg-[#F4E7E7] tw:px-3! tw:py-2! tw:leading-4.5!">關鍵字</span>
+			              <span class="badge text-body tw:bg-[#F4E7E7] tw:px-3! tw:py-2! tw:leading-4.5!">關鍵字</span>
+			            </div>
+			            <div class="hstack flex-wrap gap-2">
+			              <button class="btn btn-light tw:bg-[#F4F1F0]!" type="button"><span class="material-symbols-outlined fs-5 me-2">book_2</span>查看詳情</button>
+			              <button class="btn btn-light tw:bg-[#F4F1F0]!" type="button" data-bs-toggle="modal" data-bs-target="#modalDownload"><span class="material-symbols-outlined fs-5 me-2">arrow_circle_down</span>下載全文</button>
+			              <button class="btn btn-light tw:bg-[#F4F1F0]!" type="button"><span class="material-symbols-outlined fs-5 me-2">favorite</span>加入書車</button>
+			              <button class="btn btn-light tw:bg-[#F4F1F0]!" type="button" data-bs-toggle="modal" data-bs-target="#modalQuote"><span class="material-symbols-outlined fs-5 me-2">thermostat_carbon</span>引用格式</button>
+			              <button class="btn btn-light tw:bg-[#F4F1F0]!" type="button"><span class="material-symbols-outlined fs-5 me-2">play_arrow</span>查看多媒體作品</button>
+			            </div>
+			          </div>
+			          <div class="card card-body border-0 rounded-3 vstack gap-4 p-xl-4 tw:shadow-md tw:xl:px-10!">
+			            <div class="hstack flex-wrap gap-3 tw:**:text-[calc(15rem/16)]!">
+			              <div class="px-2 tw:bg-[#F4F1F0]">
+			                <div class="hstack gap-2 tw:leading-4.5! tw:px-3! tw:py-2!">
+			                  <input id="check3" class="check form-check-input rounded-1 m-0" type="checkbox" value="">
+			                  <label class="form-check-label" for="check3">選取</label>
+			                </div>
+			              </div>
+			              <span class="hstack tw:leading-4.5! tw:px-3! tw:py-2! tw:bg-[#F4F1F0]">學術論文</span>
+			              <span class="ms-auto">被引用數 12</span>
+			            </div>
+			            <div>
+			              <h2 class="fw-bold tw:text-[calc(20rem/16)]!">出版基於深度學習的自然語言處理技術再智慧教育系統中的應用與效能評估</h2>
+			              <p class="hstack flex-wrap gap-2 m-0 tw:**:text-[calc(15rem/16)]!">
+			                <span>110</span>
+			                <span>國立台灣大學</span>
+			                <span>資訊工程研究所</span>
+			                <span>王小明</span>
+			                <span>156頁</span>
+			                <span>指導教授：李大華</span>
+			              </p>
+			            </div>
+			            <p class="m-0 tw:text-[calc(15rem/16)]!">摘要說明文字摘要說明文字摘要說明文字摘要說明文字摘要說明文字摘要說明文字摘要說明文字摘要說明文字摘要說明文字摘要說明文字摘要說明文字摘要說明文字摘要說明文字摘要說明文字摘要說明文字摘要說明文字摘要說明文字摘要說明文字摘要說明文字摘要說明文字摘要說明文字摘要說明文字摘要說明文字摘要說明文字摘要說明文字摘要說明文字摘要說明文字摘要說明文字</p>
+			            <div class="hstack flex-wrap gap-2 tw:**:text-[calc(15rem/16)]!">
+			              <span class="badge text-body tw:bg-[#F4E7E7] tw:px-3! tw:py-2! tw:leading-4.5!">深度學習</span>
+			              <span class="badge text-body tw:bg-[#F4E7E7] tw:px-3! tw:py-2! tw:leading-4.5!">關鍵字</span>
+			              <span class="badge text-body tw:bg-[#F4E7E7] tw:px-3! tw:py-2! tw:leading-4.5!">關鍵字</span>
+			              <span class="badge text-body tw:bg-[#F4E7E7] tw:px-3! tw:py-2! tw:leading-4.5!">關鍵字</span>
+			              <span class="badge text-body tw:bg-[#F4E7E7] tw:px-3! tw:py-2! tw:leading-4.5!">關鍵字</span>
+			            </div>
+			            <div class="hstack flex-wrap gap-2">
+			              <button class="btn btn-light tw:bg-[#F4F1F0]!" type="button"><span class="material-symbols-outlined fs-5 me-2">book_2</span>查看詳情</button>
+			              <button class="btn btn-light tw:bg-[#F4F1F0]!" type="button" data-bs-toggle="modal" data-bs-target="#modalDownload"><span class="material-symbols-outlined fs-5 me-2">arrow_circle_down</span>下載全文</button>
+			              <button class="btn btn-light tw:bg-[#F4F1F0]!" type="button"><span class="material-symbols-outlined fs-5 me-2">favorite</span>加入書車</button>
+			              <button class="btn btn-light tw:bg-[#F4F1F0]!" type="button" data-bs-toggle="modal" data-bs-target="#modalQuote"><span class="material-symbols-outlined fs-5 me-2">thermostat_carbon</span>引用格式</button>
+			              <button class="btn btn-light tw:bg-[#F4F1F0]!" type="button"><span class="material-symbols-outlined fs-5 me-2">play_arrow</span>查看多媒體作品</button>
+			            </div>
+			          </div>
+			          <div class="card card-body border-0 rounded-3 vstack gap-4 p-xl-4 tw:shadow-md tw:xl:px-10!">
+			            <div class="hstack flex-wrap gap-3 tw:**:text-[calc(15rem/16)]!">
+			              <div class="px-2 tw:bg-[#F4F1F0]">
+			                <div class="hstack gap-2 tw:leading-4.5! tw:px-3! tw:py-2!">
+			                  <input id="check4" class="check form-check-input rounded-1 m-0" type="checkbox" value="">
+			                  <label class="form-check-label" for="check4">選取</label>
+			                </div>
+			              </div>
+			              <span class="hstack tw:leading-4.5! tw:px-3! tw:py-2! tw:bg-[#F4F1F0]">學術論文</span>
+			              <span class="ms-auto">被引用數 12</span>
+			            </div>
+			            <div>
+			              <h2 class="fw-bold tw:text-[calc(20rem/16)]!">出版基於深度學習的自然語言處理技術再智慧教育系統中的應用與效能評估</h2>
+			              <p class="hstack flex-wrap gap-2 m-0 tw:**:text-[calc(15rem/16)]!">
+			                <span>110</span>
+			                <span>國立台灣大學</span>
+			                <span>資訊工程研究所</span>
+			                <span>王小明</span>
+			                <span>156頁</span>
+			                <span>指導教授：李大華</span>
+			              </p>
+			            </div>
+			            <p class="m-0 tw:text-[calc(15rem/16)]!">摘要說明文字摘要說明文字摘要說明文字摘要說明文字摘要說明文字摘要說明文字摘要說明文字摘要說明文字摘要說明文字摘要說明文字摘要說明文字摘要說明文字摘要說明文字摘要說明文字摘要說明文字摘要說明文字摘要說明文字摘要說明文字摘要說明文字摘要說明文字摘要說明文字摘要說明文字摘要說明文字摘要說明文字摘要說明文字摘要說明文字摘要說明文字摘要說明文字</p>
+			            <div class="hstack flex-wrap gap-2 tw:**:text-[calc(15rem/16)]!">
+			              <span class="badge text-body tw:bg-[#F4E7E7] tw:px-3! tw:py-2! tw:leading-4.5!">深度學習</span>
+			              <span class="badge text-body tw:bg-[#F4E7E7] tw:px-3! tw:py-2! tw:leading-4.5!">關鍵字</span>
+			              <span class="badge text-body tw:bg-[#F4E7E7] tw:px-3! tw:py-2! tw:leading-4.5!">關鍵字</span>
+			              <span class="badge text-body tw:bg-[#F4E7E7] tw:px-3! tw:py-2! tw:leading-4.5!">關鍵字</span>
+			              <span class="badge text-body tw:bg-[#F4E7E7] tw:px-3! tw:py-2! tw:leading-4.5!">關鍵字</span>
+			            </div>
+			            <div class="hstack flex-wrap gap-2">
+			              <button class="btn btn-light tw:bg-[#F4F1F0]!" type="button"><span class="material-symbols-outlined fs-5 me-2">book_2</span>查看詳情</button>
+			              <button class="btn btn-light tw:bg-[#F4F1F0]!" type="button" data-bs-toggle="modal" data-bs-target="#modalDownload"><span class="material-symbols-outlined fs-5 me-2">arrow_circle_down</span>下載全文</button>
+			              <button class="btn btn-light tw:bg-[#F4F1F0]!" type="button"><span class="material-symbols-outlined fs-5 me-2">favorite</span>加入書車</button>
+			              <button class="btn btn-light tw:bg-[#F4F1F0]!" type="button" data-bs-toggle="modal" data-bs-target="#modalQuote"><span class="material-symbols-outlined fs-5 me-2">thermostat_carbon</span>引用格式</button>
+			              <button class="btn btn-light tw:bg-[#F4F1F0]!" type="button"><span class="material-symbols-outlined fs-5 me-2">play_arrow</span>查看多媒體作品</button>
+			            </div>
+			          </div>
+			          <div class="card card-body border-0 rounded-3 vstack gap-4 p-xl-4 tw:shadow-md tw:xl:px-10!">
+			            <div class="hstack flex-wrap gap-3 tw:**:text-[calc(15rem/16)]!">
+			              <div class="px-2 tw:bg-[#F4F1F0]">
+			                <div class="hstack gap-2 tw:leading-4.5! tw:px-3! tw:py-2!">
+			                  <input id="check5" class="check form-check-input rounded-1 m-0" type="checkbox" value="">
+			                  <label class="form-check-label" for="check5">選取</label>
+			                </div>
+			              </div>
+			              <span class="hstack tw:leading-4.5! tw:px-3! tw:py-2! tw:bg-[#F4F1F0]">學術論文</span>
+			              <span class="ms-auto">被引用數 12</span>
+			            </div>
+			            <div>
+			              <h2 class="fw-bold tw:text-[calc(20rem/16)]!">出版基於深度學習的自然語言處理技術再智慧教育系統中的應用與效能評估</h2>
+			              <p class="hstack flex-wrap gap-2 m-0 tw:**:text-[calc(15rem/16)]!">
+			                <span>110</span>
+			                <span>國立台灣大學</span>
+			                <span>資訊工程研究所</span>
+			                <span>王小明</span>
+			                <span>156頁</span>
+			                <span>指導教授：李大華</span>
+			              </p>
+			            </div>
+			            <p class="m-0 tw:text-[calc(15rem/16)]!">摘要說明文字摘要說明文字摘要說明文字摘要說明文字摘要說明文字摘要說明文字摘要說明文字摘要說明文字摘要說明文字摘要說明文字摘要說明文字摘要說明文字摘要說明文字摘要說明文字摘要說明文字摘要說明文字摘要說明文字摘要說明文字摘要說明文字摘要說明文字摘要說明文字摘要說明文字摘要說明文字摘要說明文字摘要說明文字摘要說明文字摘要說明文字摘要說明文字</p>
+			            <div class="hstack flex-wrap gap-2 tw:**:text-[calc(15rem/16)]!">
+			              <span class="badge text-body tw:bg-[#F4E7E7] tw:px-3! tw:py-2! tw:leading-4.5!">深度學習</span>
+			              <span class="badge text-body tw:bg-[#F4E7E7] tw:px-3! tw:py-2! tw:leading-4.5!">關鍵字</span>
+			              <span class="badge text-body tw:bg-[#F4E7E7] tw:px-3! tw:py-2! tw:leading-4.5!">關鍵字</span>
+			              <span class="badge text-body tw:bg-[#F4E7E7] tw:px-3! tw:py-2! tw:leading-4.5!">關鍵字</span>
+			              <span class="badge text-body tw:bg-[#F4E7E7] tw:px-3! tw:py-2! tw:leading-4.5!">關鍵字</span>
+			            </div>
+			            <div class="hstack flex-wrap gap-2">
+			              <button class="btn btn-light tw:bg-[#F4F1F0]!" type="button"><span class="material-symbols-outlined fs-5 me-2">book_2</span>查看詳情</button>
+			              <button class="btn btn-light tw:bg-[#F4F1F0]!" type="button" data-bs-toggle="modal" data-bs-target="#modalDownload"><span class="material-symbols-outlined fs-5 me-2">arrow_circle_down</span>下載全文</button>
+			              <button class="btn btn-light tw:bg-[#F4F1F0]!" type="button"><span class="material-symbols-outlined fs-5 me-2">favorite</span>加入書車</button>
+			              <button class="btn btn-light tw:bg-[#F4F1F0]!" type="button" data-bs-toggle="modal" data-bs-target="#modalQuote"><span class="material-symbols-outlined fs-5 me-2">thermostat_carbon</span>引用格式</button>
+			              <button class="btn btn-light tw:bg-[#F4F1F0]!" type="button"><span class="material-symbols-outlined fs-5 me-2">play_arrow</span>查看多媒體作品</button>
+			            </div>
+			          </div>
+			          <div class="card card-body border-0 rounded-3 vstack gap-4 p-xl-4 tw:shadow-md tw:xl:px-10!">
+			            <div class="hstack flex-wrap gap-3 tw:**:text-[calc(15rem/16)]!">
+			              <div class="px-2 tw:bg-[#F4F1F0]">
+			                <div class="hstack gap-2 tw:leading-4.5! tw:px-3! tw:py-2!">
+			                  <input id="check6" class="check form-check-input rounded-1 m-0" type="checkbox" value="">
+			                  <label class="form-check-label" for="check6">選取</label>
+			                </div>
+			              </div>
+			              <span class="hstack tw:leading-4.5! tw:px-3! tw:py-2! tw:bg-[#F4F1F0]">學術論文</span>
+			              <span class="ms-auto">被引用數 12</span>
+			            </div>
+			            <div>
+			              <h2 class="fw-bold tw:text-[calc(20rem/16)]!">出版基於深度學習的自然語言處理技術再智慧教育系統中的應用與效能評估</h2>
+			              <p class="hstack flex-wrap gap-2 m-0 tw:**:text-[calc(15rem/16)]!">
+			                <span>110</span>
+			                <span>國立台灣大學</span>
+			                <span>資訊工程研究所</span>
+			                <span>王小明</span>
+			                <span>156頁</span>
+			                <span>指導教授：李大華</span>
+			              </p>
+			            </div>
+			            <p class="m-0 tw:text-[calc(15rem/16)]!">摘要說明文字摘要說明文字摘要說明文字摘要說明文字摘要說明文字摘要說明文字摘要說明文字摘要說明文字摘要說明文字摘要說明文字摘要說明文字摘要說明文字摘要說明文字摘要說明文字摘要說明文字摘要說明文字摘要說明文字摘要說明文字摘要說明文字摘要說明文字摘要說明文字摘要說明文字摘要說明文字摘要說明文字摘要說明文字摘要說明文字摘要說明文字摘要說明文字</p>
+			            <div class="hstack flex-wrap gap-2 tw:**:text-[calc(15rem/16)]!">
+			              <span class="badge text-body tw:bg-[#F4E7E7] tw:px-3! tw:py-2! tw:leading-4.5!">深度學習</span>
+			              <span class="badge text-body tw:bg-[#F4E7E7] tw:px-3! tw:py-2! tw:leading-4.5!">關鍵字</span>
+			              <span class="badge text-body tw:bg-[#F4E7E7] tw:px-3! tw:py-2! tw:leading-4.5!">關鍵字</span>
+			              <span class="badge text-body tw:bg-[#F4E7E7] tw:px-3! tw:py-2! tw:leading-4.5!">關鍵字</span>
+			              <span class="badge text-body tw:bg-[#F4E7E7] tw:px-3! tw:py-2! tw:leading-4.5!">關鍵字</span>
+			            </div>
+			            <div class="hstack flex-wrap gap-2">
+			              <button class="btn btn-light tw:bg-[#F4F1F0]!" type="button"><span class="material-symbols-outlined fs-5 me-2">book_2</span>查看詳情</button>
+			              <button class="btn btn-light tw:bg-[#F4F1F0]!" type="button" data-bs-toggle="modal" data-bs-target="#modalDownload"><span class="material-symbols-outlined fs-5 me-2">arrow_circle_down</span>下載全文</button>
+			              <button class="btn btn-light tw:bg-[#F4F1F0]!" type="button"><span class="material-symbols-outlined fs-5 me-2">favorite</span>加入書車</button>
+			              <button class="btn btn-light tw:bg-[#F4F1F0]!" type="button" data-bs-toggle="modal" data-bs-target="#modalQuote"><span class="material-symbols-outlined fs-5 me-2">thermostat_carbon</span>引用格式</button>
+			              <button class="btn btn-light tw:bg-[#F4F1F0]!" type="button"><span class="material-symbols-outlined fs-5 me-2">play_arrow</span>查看多媒體作品</button>
+			            </div>
+			          </div>
+			          <div class="card card-body border-0 rounded-3 vstack gap-4 p-xl-4 tw:shadow-md tw:xl:px-10!">
+			            <div class="hstack flex-wrap gap-3 tw:**:text-[calc(15rem/16)]!">
+			              <div class="px-2 tw:bg-[#F4F1F0]">
+			                <div class="hstack gap-2 tw:leading-4.5! tw:px-3! tw:py-2!">
+			                  <input id="check7" class="check form-check-input rounded-1 m-0" type="checkbox" value="">
+			                  <label class="form-check-label" for="check7">選取</label>
+			                </div>
+			              </div>
+			              <span class="hstack tw:leading-4.5! tw:px-3! tw:py-2! tw:bg-[#F4F1F0]">學術論文</span>
+			              <span class="ms-auto">被引用數 12</span>
+			            </div>
+			            <div>
+			              <h2 class="fw-bold tw:text-[calc(20rem/16)]!">出版基於深度學習的自然語言處理技術再智慧教育系統中的應用與效能評估</h2>
+			              <p class="hstack flex-wrap gap-2 m-0 tw:**:text-[calc(15rem/16)]!">
+			                <span>110</span>
+			                <span>國立台灣大學</span>
+			                <span>資訊工程研究所</span>
+			                <span>王小明</span>
+			                <span>156頁</span>
+			                <span>指導教授：李大華</span>
+			              </p>
+			            </div>
+			            <p class="m-0 tw:text-[calc(15rem/16)]!">摘要說明文字摘要說明文字摘要說明文字摘要說明文字摘要說明文字摘要說明文字摘要說明文字摘要說明文字摘要說明文字摘要說明文字摘要說明文字摘要說明文字摘要說明文字摘要說明文字摘要說明文字摘要說明文字摘要說明文字摘要說明文字摘要說明文字摘要說明文字摘要說明文字摘要說明文字摘要說明文字摘要說明文字摘要說明文字摘要說明文字摘要說明文字摘要說明文字</p>
+			            <div class="hstack flex-wrap gap-2 tw:**:text-[calc(15rem/16)]!">
+			              <span class="badge text-body tw:bg-[#F4E7E7] tw:px-3! tw:py-2! tw:leading-4.5!">深度學習</span>
+			              <span class="badge text-body tw:bg-[#F4E7E7] tw:px-3! tw:py-2! tw:leading-4.5!">關鍵字</span>
+			              <span class="badge text-body tw:bg-[#F4E7E7] tw:px-3! tw:py-2! tw:leading-4.5!">關鍵字</span>
+			              <span class="badge text-body tw:bg-[#F4E7E7] tw:px-3! tw:py-2! tw:leading-4.5!">關鍵字</span>
+			              <span class="badge text-body tw:bg-[#F4E7E7] tw:px-3! tw:py-2! tw:leading-4.5!">關鍵字</span>
+			            </div>
+			            <div class="hstack flex-wrap gap-2">
+			              <button class="btn btn-light tw:bg-[#F4F1F0]!" type="button"><span class="material-symbols-outlined fs-5 me-2">book_2</span>查看詳情</button>
+			              <button class="btn btn-light tw:bg-[#F4F1F0]!" type="button" data-bs-toggle="modal" data-bs-target="#modalDownload"><span class="material-symbols-outlined fs-5 me-2">arrow_circle_down</span>下載全文</button>
+			              <button class="btn btn-light tw:bg-[#F4F1F0]!" type="button"><span class="material-symbols-outlined fs-5 me-2">favorite</span>加入書車</button>
+			              <button class="btn btn-light tw:bg-[#F4F1F0]!" type="button" data-bs-toggle="modal" data-bs-target="#modalQuote"><span class="material-symbols-outlined fs-5 me-2">thermostat_carbon</span>引用格式</button>
+			              <button class="btn btn-light tw:bg-[#F4F1F0]!" type="button"><span class="material-symbols-outlined fs-5 me-2">play_arrow</span>查看多媒體作品</button>
+			            </div>
+			          </div>
+			          <div class="card card-body border-0 rounded-3 vstack gap-4 p-xl-4 tw:shadow-md tw:xl:px-10!">
+			            <div class="hstack flex-wrap gap-3 tw:**:text-[calc(15rem/16)]!">
+			              <div class="px-2 tw:bg-[#F4F1F0]">
+			                <div class="hstack gap-2 tw:leading-4.5! tw:px-3! tw:py-2!">
+			                  <input id="check8" class="check form-check-input rounded-1 m-0" type="checkbox" value="">
+			                  <label class="form-check-label" for="check8">選取</label>
+			                </div>
+			              </div>
+			              <span class="hstack tw:leading-4.5! tw:px-3! tw:py-2! tw:bg-[#F4F1F0]">學術論文</span>
+			              <span class="ms-auto">被引用數 12</span>
+			            </div>
+			            <div>
+			              <h2 class="fw-bold tw:text-[calc(20rem/16)]!">出版基於深度學習的自然語言處理技術再智慧教育系統中的應用與效能評估</h2>
+			              <p class="hstack flex-wrap gap-2 m-0 tw:**:text-[calc(15rem/16)]!">
+			                <span>110</span>
+			                <span>國立台灣大學</span>
+			                <span>資訊工程研究所</span>
+			                <span>王小明</span>
+			                <span>156頁</span>
+			                <span>指導教授：李大華</span>
+			              </p>
+			            </div>
+			            <p class="m-0 tw:text-[calc(15rem/16)]!">摘要說明文字摘要說明文字摘要說明文字摘要說明文字摘要說明文字摘要說明文字摘要說明文字摘要說明文字摘要說明文字摘要說明文字摘要說明文字摘要說明文字摘要說明文字摘要說明文字摘要說明文字摘要說明文字摘要說明文字摘要說明文字摘要說明文字摘要說明文字摘要說明文字摘要說明文字摘要說明文字摘要說明文字摘要說明文字摘要說明文字摘要說明文字摘要說明文字</p>
+			            <div class="hstack flex-wrap gap-2 tw:**:text-[calc(15rem/16)]!">
+			              <span class="badge text-body tw:bg-[#F4E7E7] tw:px-3! tw:py-2! tw:leading-4.5!">深度學習</span>
+			              <span class="badge text-body tw:bg-[#F4E7E7] tw:px-3! tw:py-2! tw:leading-4.5!">關鍵字</span>
+			              <span class="badge text-body tw:bg-[#F4E7E7] tw:px-3! tw:py-2! tw:leading-4.5!">關鍵字</span>
+			              <span class="badge text-body tw:bg-[#F4E7E7] tw:px-3! tw:py-2! tw:leading-4.5!">關鍵字</span>
+			              <span class="badge text-body tw:bg-[#F4E7E7] tw:px-3! tw:py-2! tw:leading-4.5!">關鍵字</span>
+			            </div>
+			            <div class="hstack flex-wrap gap-2">
+			              <button class="btn btn-light tw:bg-[#F4F1F0]!" type="button"><span class="material-symbols-outlined fs-5 me-2">book_2</span>查看詳情</button>
+			              <button class="btn btn-light tw:bg-[#F4F1F0]!" type="button" data-bs-toggle="modal" data-bs-target="#modalDownload"><span class="material-symbols-outlined fs-5 me-2">arrow_circle_down</span>下載全文</button>
+			              <button class="btn btn-light tw:bg-[#F4F1F0]!" type="button"><span class="material-symbols-outlined fs-5 me-2">favorite</span>加入書車</button>
+			              <button class="btn btn-light tw:bg-[#F4F1F0]!" type="button" data-bs-toggle="modal" data-bs-target="#modalQuote"><span class="material-symbols-outlined fs-5 me-2">thermostat_carbon</span>引用格式</button>
+			              <button class="btn btn-light tw:bg-[#F4F1F0]!" type="button"><span class="material-symbols-outlined fs-5 me-2">play_arrow</span>查看多媒體作品</button>
+			            </div>
+			          </div>
+			          <!-- pagination -->
+			          <nav class="paginationNav mx-md-auto mt-2 p-1 rounded-1 position-absolute start-0 end-0 bottom-0 tw:bg-[#E8E0DC] tw:md:relative!">
+			          	<ul class="pagination align-items-center justify-content-center flex-wrap gap-sm-2 gap-xl-4 m-0">
+			          		<li class="page-item m-0 disabled">
+			          			<a class="page-link d-flex align-items-center justify-content-center border-0" href="" title="上一頁" tabindex="-1">
+			          				
+			          				<span class="material-symbols-outlined" aria-hidden="true">arrow_back_ios_new</span>
+			          				<span class="ms-2">上一頁</span>
+			          			</a>
+			          		</li>
+			          		<li class="page-item m-0" hidden>
+			          			<a class="page-link d-flex align-items-center justify-content-center border-0" href="" title="上一頁">
+			          				
+			          				<span class="material-symbols-outlined" aria-hidden="true">arrow_back_ios_new</span>
+			          				<span class="ms-2">上一頁</span>
+			          			</a>
+			          		</li>
+			          		<li class="page-item m-0 active"><a class="page-link d-flex align-items-center justify-content-center border-0 rounded-1 py-2 px-lg-3" href="">1</a></li>
+			          		<li class="page-item m-0"><a class="page-link d-flex align-items-center justify-content-center border-0 rounded-1 py-2 px-lg-3" href="">2</a></li>
+			          		<li class="page-item m-0"><a class="page-link d-flex align-items-center justify-content-center border-0 rounded-1 py-2 px-lg-3" href="">3</a></li>
+			          		
+			          		
+			          		<li class="page-item m-0">
+			          			<a class="page-link d-flex align-items-center justify-content-center border-0" href="" title="下一頁">
+			          				<span class="me-2">下一頁</span>
+			          				<span class="material-symbols-outlined" aria-hidden="true">arrow_forward_ios</span>
+			          			</a>
+			          		</li>
+			          		<li class="page-item m-0 disabled" hidden>
+			          			<a class="page-link d-flex align-items-center justify-content-center border-0" href="" title="下一頁" tabindex="-1">
+			          				<span class="me-2">下一頁</span>
+			          				<span class="material-symbols-outlined" aria-hidden="true">arrow_forward_ios</span>
+			          			</a>
+			          		</li>
+			          	</ul>
+			          </nav>
+			          <!-- /pagination -->
+			        </div>
+			      </div>
+			    </div>
+			  </section>
+			  <!-- modal -->
+			  <div class="modal fade" id="modalDownload" tabindex="-1" aria-labelledby="modalDownloadTitle" aria-hidden="true">
+			    <div class="modal-dialog modal-dialog-centered">
+			      <div class="modal-content px-2">
+			        <div class="modal-header flex-wrap border-0 pb-0">
+			          <div id="modalDownloadTitle" class="modalTitle fw-bold me-auto tw:md:text-[calc(20rem/16)]!">請遵守著作權法</div>
+			          <button type="button" class="btn me-n3" data-bs-dismiss="modal" aria-label="Close"><span class="material-symbols-outlined fs-4 w400">close_small</span><span class="visually-hidden">關閉</span></button>
+			        </div>
+			        <div class="modal-body vstack gap-3">
+			          <p class="m-0">本電子全文僅授權使用者為學術研究之目的，進行個人非營利性質之檢索、閱讀、列印。請遵守中華民國著作權法與相關法律之規定，切勿任意販賣營利、重製、散佈、抄襲、改作、轉貼、播送或於網際網路公開傳輸，以免觸法。</p>
+			          <div>
+			            <label for="captcha" class="form-label vstack tw:text-[calc(15rem/16)]!">驗證碼<span>請輸入您在下圖中看到的字元</span></label>
+			            <input id="captcha" class="form-control tw:min-h-12" type="text" placeholder="請輸入驗證碼">
+			          </div>
+			          <img src="img/captcha.png" alt="captcha image" width="100">
+			        </div>
+			        <div class="modal-footer border-0 pb-4">
+			          <button class="btn btn-red w-100 tw:min-h-12" type="button" data-bs-dismiss="modal">前往下載</button>
+			        </div>
+			      </div>
+			    </div>
+			  </div>
+			  <!-- /modal -->
+			  <!-- modal -->
+			  <div class="modal fade" id="modalQuote" tabindex="-1" aria-labelledby="modalQuoteTitle" aria-hidden="true">
+			    <div class="modal-dialog modal-dialog-centered">
+			      <div class="modal-content px-2">
+			        <div class="modal-header flex-wrap border-0 pb-0">
+			          <div id="modalQuoteTitle" class="modalTitle fw-bold me-auto tw:md:text-[calc(18rem/16)]!">引用格式</div>
+			          <button type="button" class="btn me-n3" data-bs-dismiss="modal" aria-label="Close"><span class="material-symbols-outlined fs-4 w400">close_small</span><span class="visually-hidden">關閉</span></button>
+			        </div>
+			        <div class="modal-body vstack gap-3 pb-4">
+			          <p>APA Style:<br>連美秋（2022）。探討訂房網站環保訊息及消費者環保行為對環保旅館購買意願影響。﹝碩士論文。輔仁大學﹞臺灣博碩士論文知識加值系統。 https://hdl.handle.net/11296/2reua7。</p>
+			          <p>Chicago (Turabian) Style:<br>連美秋。「探討訂房網站環保訊息及消費者環保行為對環保旅館購買意願影響」。碩士論文，輔仁大學餐旅管理學系碩士在職專班，2022。https://hdl.handle.net/11296/2reua7。</p>
+			          <p>MLA Style:<br>連美秋。「探討訂房網站環保訊息及消費者環保行為對環保旅館購買意願影響」。碩士論文，輔仁大學餐旅管理學系碩士在職專班，2022。＜https://hdl.handle.net/11296/2reua7＞。</p>
+			        </div>
+			      </div>
+			    </div>
+			  </div>
+			  <!-- /modal -->
+			</div>
+		</main>
+		<div class="bg-white shadow position-fixed start-0 end-0 bottom-0 tw:**:text-[calc(14rem/16)]! tw:lg:h-20 tw:hidden! tw:group-has-[.check:checked]/check:flex! tw:z-1056">
+			<div class="container-lg hstack flex-wrap justify-content-center justify-content-md-end gap-3 p-2">
+				<span>已勾選8項/30筆</span>
+				<button class="btn btn-red border-0 tw:bg-[#BDA9A2]!" type="button" data-bs-toggle="modal" data-bs-target="#modalExport">匯出書目資料</button>
+			</div>
+		</div>
+		<div id="modalExport" class="modal fade" tabindex="-1" aria-labelledby="modalExportLabel" aria-hidden="true">
+			<div class="modal-dialog modal-dialog-centered modal-lg">
+				<div class="modal-content px-2">
+					<div class="modal-header border-0 pb-0">
+						<p id="modalExportLabel" class="modal-title fw-bold me-auto tw:md:text-[calc(18rem/16)]!">輸出設定</p>
+						<button class="btn me-n3" type="button" data-bs-dismiss="modal" aria-label="Close"><span class="material-symbols-outlined fs-4 w400">close_small</span></button>
+					</div>
+					<div class="modal-body vstack gap-3">
+						<fieldset class="vstack gap-2">
+							<legend class="fw-normal m-0 tw:text-[calc(15rem/16)]!">輸出欄位 (完整欄位請先綁定借閱證)</legend>
+							<div class="hstack gap-3 flex-wrap">
+								<div class="border rounded-1 px-3 py-2 hstack gap-2 tw:has-disabled:bg-[#D9D9D9]">
+									<input id="exChecka1" class="form-check-input m-0 tw:has-disabled:text-[#767676]!" type="checkbox" value="">
+									<label class="form-check-label d-block" for="exChecka1">簡易書目</label>
+								</div>
+								<div class="border rounded-1 px-3 py-2 hstack gap-2 tw:has-disabled:bg-[#D9D9D9]">
+									<input id="exChecka2" class="form-check-input m-0 tw:has-disabled:text-[#767676]!" type="checkbox" value="" disabled>
+									<label class="form-check-label d-block" for="exChecka2">完整書目</label>
+								</div>
+							</div>
+						</fieldset>
+						<fieldset class="vstack gap-2">
+							<legend class="fw-normal m-0 tw:text-[calc(15rem/16)]!">書目資料輸出格式</legend>
+							<div class="row g-2">
+								<div class="col-sm-6 col-lg-4">
+									<div class="border rounded-1 px-3 py-2 hstack gap-2 align-items-start">
+										<input id="exCheckb1" class="form-check-input" type="checkbox" value="">
+										<div>
+											<label class="form-check-label d-block" for="exCheckb1">APA Style</label>
+											<span class="tw:text-[#757575] tw:text-[calc(15rem/16)]!">社會科學常用的格式</span>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-6 col-lg-4">
+									<div class="border rounded-1 px-3 py-2 hstack gap-2 align-items-start">
+										<input id="exCheckb2" class="form-check-input" type="checkbox" value="">
+										<div>
+											<label class="form-check-label d-block" for="exCheckb2">Chicago (Turabian) Style</label>
+											<span class="tw:text-[#757575] tw:text-[calc(15rem/16)]!">常見於歷史、人文領域</span>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-6 col-lg-4">
+									<div class="border rounded-1 px-3 py-2 hstack gap-2 align-items-start">
+										<input id="exCheckb3" class="form-check-input" type="checkbox" value="">
+										<div>
+											<label class="form-check-label d-block" for="exCheckb3">MLA Style</label>
+											<span class="tw:text-[#757575] tw:text-[calc(15rem/16)]!">文學領域常用</span>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-6 col-lg-4">
+									<div class="border rounded-1 px-3 py-2 hstack gap-2 align-items-start">
+										<input id="exCheckb4" class="form-check-input" type="checkbox" value="">
+										<div>
+											<label class="form-check-label d-block" for="exCheckb4">CNS-13611 Style</label>
+											<span class="tw:text-[#757575] tw:text-[calc(15rem/16)]!">台灣的國家標準</span>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-6 col-lg-4">
+									<div class="border rounded-1 px-3 py-2 hstack gap-2 align-items-start">
+										<input id="exCheckb5" class="form-check-input" type="checkbox" value="">
+										<div>
+											<label class="form-check-label d-block" for="exCheckb5">CSE Style</label>
+											<span class="tw:text-[#757575] tw:text-[calc(15rem/16)]!">自然科學常見</span>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-6 col-lg-4">
+									<div class="border rounded-1 px-3 py-2 hstack gap-2 align-items-start">
+										<input id="exCheckb6" class="form-check-input" type="checkbox" value="">
+										<div>
+											<label class="form-check-label d-block" for="exCheckb6">RIS format (EndNote...)</label>
+											<span class="tw:text-[#757575] tw:text-[calc(15rem/16)]!">文學領域常用</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</fieldset>
+						<fieldset class="vstack gap-2">
+							<legend class="fw-normal m-0 tw:text-[calc(15rem/16)]!">輸出字碼</legend>
+							<div class="row g-2">
+								<div class="col-sm-6 col-lg-4">
+									<div class="border rounded-1 px-3 py-2 hstack gap-2 align-items-start">
+										<input id="exCheckc1" class="form-check-input" type="checkbox" value="">
+										<div>
+											<label class="form-check-label d-block" for="exCheckc1">UTF-8</label>
+											<span class="tw:text-[#757575] tw:text-[calc(15rem/16)]!">最常用、跨平台通用</span>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-6 col-lg-4">
+									<div class="border rounded-1 px-3 py-2 hstack gap-2 align-items-start">
+										<input id="exCheckc2" class="form-check-input" type="checkbox" value="">
+										<div>
+											<label class="form-check-label d-block" for="exCheckc2">BIG5</label>
+											<span class="tw:text-[#757575] tw:text-[calc(15rem/16)]!">舊的繁體中文編碼</span>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-6 col-lg-4">
+									<div class="border rounded-1 px-3 py-2 hstack gap-2 align-items-start">
+										<input id="exCheckc3" class="form-check-input" type="checkbox" value="">
+										<div>
+											<label class="form-check-label d-block" for="exCheckc3">GB2312</label>
+											<span class="tw:text-[#757575] tw:text-[calc(15rem/16)]!">簡體中文編碼</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</fieldset>
+					</div>
+					<div class="modal-footer border-0">
+						<div class="hstack flex-wrap gap-2 me-auto">
+							<label class="form-label m-0" for="format">輸出格式</label>
+							<select id="format" class="form-select rounded-1 w-auto me-3 tw:border-[#888888]! tw:min-w-30 tw:min-h-8.5">
+								<option value="" selected>TXT檔</option>
+								<option value="">item</option>
+							</select>
+							<span>數量：2筆/30筆</span>
+						</div>
+						<button class="btn btn-outline-red px-4 px-lg-5 tw:text-[calc(18rem/16)]!" type="button">預覽</button>
+						<button class="btn btn-red px-4 px-lg-5 tw:text-[calc(18rem/16)]!" type="button">下載</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer class="position-relative bg-red p-4 px-lg-0 py-lg-5">
+		  <div id="footer" class="footerBg">
+		    <div class="footerContainer container-lg">
+		      <div class="position-absolute d-none d-lg-inline-block"><a class="text-white ms-n4" href="#Z" id="AZ" name="Z" title="下方功能區塊" accesskey="Z">:::</a></div>
+		      <div class="vstack gap-3 tw:**:text-white!">
+		        <div class="row gx-5 gap-lg-5">
+		          <div class="col-auto">
+		            <div class="vstack gap-2">
+		              <p class="fw-bold m-0">關於我們</p>
+		              <a href="">網站簡介</a>
+		              <a href="">服務內容</a>
+		              <a href="">聯絡資訊</a>
+		              <a href="">大量書目申請</a>
+		            </div>
+		          </div>
+		          <div class="col-auto">
+		            <div class="vstack gap-2">
+		              <p class="fw-bold m-0">相關連結</p>
+		              <a href="">國圖首頁</a>
+		              <a href="">期刊文獻資訊網</a>
+		              <a href="">政府資料開放平臺</a>
+		            </div>
+		          </div>
+		        </div>
+		        <hr class="border-white opacity-100">
+		        <div class="hstack flex-wrap justify-content-lg-center column-gap-2 tw:**:text-[calc(15rem/16)]!">
+		          <div>＠ 2024國家圖書館 版權所有</div>
+		          <div class="vr opacity-100 align-self-center"></div>
+		          <a href="">隱私權政策</a>
+		          <div class="vr opacity-100 align-self-center"></div>
+		          <a href="">網站安全政策</a>
+		        </div>
+		      </div>
+		    </div>
+		    <!-- /footerContainer -->
+		  </div>
+		  <!-- /footerBg -->
+		</footer>
+
+		<script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
+	</body>
+</html>

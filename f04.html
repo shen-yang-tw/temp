@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>國家圖書館-國家大學論文系統</title>
+		<!-- favicon -->
+		<link rel="shortcut icon" type="image/gif" href="img/blank.gif" />
+		<!-- /favicon -->
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="css/bootstrap-icons.css">
+		<link rel="stylesheet" type="text/css" href="css/tailwind.css">
+		<link rel="stylesheet" type="text/css" href="css/main.min.css">
+		<link rel="stylesheet" type="text/css" href="css/style.min.css">
+	</head>
+
+	<body id="top" class="focus tw:min-h-screen" data-bs-theme="red">
+		<div class="tw:text-center tw:leading-10 tw:text-white tw:bg-pink-900"><noscript class="tw:py-1">您的瀏覽器不支援JavaScript功能，若網頁功能無法正常使用時，請開啟瀏覽器JavaScript狀態！</noscript></div>
+		<!-- header -->
+		<header class="header">
+			<span class="d-none d-lg-inline-block tw:absolute z-1"><a id="gotocenter" class="btn btn-light bg-white visually-hidden-focusable" href="#AC" title="移到主要內容">跳到主要內容</a></span>
+			<!-- container -->
+		  <div class="headerContainer">
+		    <nav class="navbar d-none d-lg-block p-0 tw:bg-[#E8E0DC]">
+		      <div id="topNav" class="topNav w-100 py-1">
+		        <div class="topContainer container-fluid px-sm-5">
+		          <div class="d-flex flex-wrap justify-content-end gap-3 tw:text-[calc(15rem/16)]! tw:**:hover:text-black!">
+		            <div class="tw:relative">
+		              <span class="d-none d-lg-inline-block"><a class="tw:no-underline px-2" href="#U" id="AU" name="U" title="上方功能區塊" accesskey="U">:::</a></span>
+		            </div>
+		            <a class="tw:text-[#66534C]!" href="">網站導覽</a>
+		            <a class="tw:text-[#66534C]!" href="">首頁</a>
+		            <a class="tw:text-[#66534C]!" href="">關於本站</a>
+		            <a class="tw:text-[#66534C]!" href="">聯絡我們</a>
+		            <a class="tw:text-[#66534C]!" href="">申請大量書目</a>
+		            <a class="tw:text-[#66534C]!" href="">國圖首頁</a>
+		            <a class="tw:text-[#66534C]!" href="">常見問題</a>
+		            <a class="tw:text-[#66534C]!" href="">操作說明</a>
+		            <a class="tw:text-[#66534C]!" href="">English</a>
+		            <a class="tw:text-[#66534C]!" href="">FB</a>
+		            <a class="tw:text-[#66534C]!" href="">Ｍobile</a>
+		          </div>
+		          
+		        </div>
+		      </div>
+		    </nav>
+		    <nav class="navBar navbar navbar-expand-lg p-0">
+		      <!-- navbarBg -->
+		      <div class="navbarBg w-100 py-2 p-lg-0 tw:bg-[#FDFCFC] tw:lg:shadow-lg">
+		        <!-- navbarContainer -->
+		        <div class="navbarContainer d-flex flex-lg-row justify-content-between tw:h-[72px] tw:lg:h-[76px] container-fluid px-lg-5">
+		          <!-- Logo -->
+		          <div class="logoBG">
+		            <div class="logoContainer d-flex align-items-center w-100 me-auto h-100">
+		              <a class="logo me-3" href="index.html">
+		                <h1 class="visually-hidden-focusable">國家圖書館-國家大學論文系統</h1>
+		                <img class="w-100" src="img/logo.png" alt="國家圖書館" width="248">
+		              </a>
+		            </div>
+		          </div>
+		          <!-- /Logo -->
+		          <button class="navbar-toggler border-0 d-block d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarOffcanvas" aria-controls="navbarOffcanvas">
+		            <i class="h2 bi bi-list tw:leading-0"></i>
+		            <span class="visually-hidden">開啟選單</span>
+		          </button>
+		          <!-- offcanvas -->
+		          <div id="navbarOffcanvas" class="mainmenuBG offcanvas offcanvas-end border-0 tw:bg-[#E8E0DC]! tw:lg:bg-transparent! tw:max-w-4/5! tw:lg:max-w-full!" tabindex="-1" aria-labelledby="offcanvasTitle">
+		            <div class="mainmenuContainer d-flex flex-column flex-lg-row justify-content-end h-100">
+		              <div class="offcanvas-header">
+		                <h2 id="offcanvasTitle" class="offcanvas-title h5"><span class="visually-hidden"></span></h2>
+		                <button type="button" class="btnClose ms-auto me-2" data-bs-dismiss="offcanvas" aria-label="Close"><i class="bi bi-x-lg"></i></button>
+		              </div>
+		              <ul id="mainmenuAccordion" class="mainmenu nav flex-column flex-lg-row gap-4 gap-lg-5 align-items-center offcanvas-body">
+		                <li class="nav-item flex-shrink-0">
+		                  <a class="nav-link fw-medium px-0 tw:lg:font-normal! tw:lg:text-[calc(18rem/16)]! tw:hover:text-(--bs-red)!" href="">論文檢索</a>
+		                </li>
+		                <li class="nav-item flex-shrink-0">
+		                  <a class="nav-link fw-medium px-0 tw:lg:font-normal! tw:lg:text-[calc(18rem/16)]! tw:hover:text-(--bs-red)!" href="">排行統計</a>
+		                </li>
+		                <li class="nav-item flex-shrink-0">
+		                  <a class="nav-link fw-medium px-0 tw:lg:font-normal! tw:lg:text-[calc(18rem/16)]! tw:hover:text-(--bs-red)!" href="">我的書車</a>
+		                </li>
+		              </ul>
+		            </div>
+		            <div class="vstack align-items-center gap-3 mb-5 d-lg-none tw:**:text-[calc(14rem/16)]!">
+		              <a class="tw:text-[#66534C]!" href="">網站導覽</a>
+		              <a class="tw:text-[#66534C]!" href="">關於本站</a>
+		              <a class="tw:text-[#66534C]!" href="">聯絡我們</a>
+		              <a class="tw:text-[#66534C]!" href="">申請大量書目</a>
+		              <a class="tw:text-[#66534C]!" href="">常見問題</a>
+		            </div>
+		          </div>
+		          <!-- /offcanvas -->
+		        </div>
+		        <!-- /navbarContainer -->
+		      </div>
+		      <!-- /navbarBg -->
+		    </nav>
+		  </div>
+		  <!-- /container -->
+		</header>
+		<!-- /header -->
+
+		<main class="py-4 py-lg-5 position-relative tw:group/all tw:[&_.btn]:[--bs-border-radius:8px] tw:min-h-screen">
+			<div class="container-lg vstack gap-4 position-relative">
+			  
+			  <!-- accesskey -->
+			  <div class="position-absolute d-none d-lg-inline-block">
+			    <a class="ms-n4" href="#C" id="AC" name="C" title="中央內容區塊" accesskey="C">:::</a>
+			  </div>
+			  <!-- /accesskey -->
+			  
+			  
+			  <div class="row g-4">
+			    <div class="col-md-8">
+			      <div class="vstack gap-4">
+			        <div class="card card-body border-0 rounded-3 vstack gap-3 p-xl-4 tw:shadow-md">
+			          <div class="hstack flex-wrap gap-3 tw:**:text-[calc(15rem/16)]!">
+			            <span class="hstack tw:leading-4.5! tw:px-3! tw:py-2! tw:bg-[#F4F1F0]">學術論文</span>
+			            <span class="ms-auto">被引用數 12</span>
+			          </div>
+			          <div class="vstack gap-1">
+			            <h2 class="fw-bold m-0 tw:text-base! tw:lg:text-[calc(20rem/16)]!">深度學習自然語言處理在智慧教育的應用研究</h2>
+			            <p>Deep Learning Natural Language Processing Applications in Smart Education Systems</p>
+			          </div>
+			          <div class="hstack flex-wrap gap-4 tw:**:text-[calc(15rem/16)]!">
+			            <ul class="list-unstyled m-0">
+			              <li>作者：陳志明</li>
+			              <li>指導教授：王小蓮 博士</li>
+			              <li>共同指導：王小蓮 博士</li>
+			            </ul>
+			            <ul class="list-unstyled m-0">
+			              <li>學校：國立台灣大學</li>
+			              <li>系所：資訊工程學系</li>
+			              <li>畢業學年度：105</li>
+			            </ul>
+			          </div>
+			          <div class="hstack flex-wrap gap-2">
+			            <button class="btn btn-light tw:bg-[#F4F1F0]!" type="button" data-bs-toggle="modal" data-bs-target="#modalDownload"><span class="material-symbols-outlined fs-5 me-2">arrow_circle_down</span>下載全文</button>
+			            <button class="btn btn-light tw:bg-[#F4F1F0]!" type="button"><span class="material-symbols-outlined fs-5 me-2">favorite</span>加入書車</button>
+			            <button class="btn btn-light tw:bg-[#F4F1F0]!" type="button" data-bs-toggle="modal" data-bs-target="#modalQuote"><span class="material-symbols-outlined fs-5 me-2">thermostat_carbon</span>引用格式</button>
+			            <button class="btn btn-light tw:bg-[#F4F1F0]!" type="button"><span class="material-symbols-outlined fs-5 me-2">arrow_outward</span>分享</button>
+			            <button class="btn btn-red border-0 tw:bg-[#9E8C86]!" type="button"><span class="material-symbols-outlined fs-5 me-2">add_notes</span>我願授權</button>
+			          </div>
+			        </div>
+			        <!-- Tab Pane -->
+			        <ul class="nav nav-pills nav-fill flex-nowrap gap-3 overflow-auto rounded-1 p-1 tw:bg-[#E8E0DC]" role="tablist">
+			          <li class="nav-item flex-shrink-0" role="presentation">
+			            <button id="tab1" class="nav-link p-2 px-lg-3 py-lg-2 tw:text-sm tw:lg:text-base active" data-bs-toggle="pill" data-bs-target="#tabpanel1" type="button" role="tab" aria-controls="tabpanel1">基本資料</button>
+			          </li>
+			          <li class="nav-item flex-shrink-0" role="presentation">
+			            <button id="tab2" class="nav-link p-2 px-lg-3 py-lg-2 tw:text-sm tw:lg:text-base" data-bs-toggle="pill" data-bs-target="#tabpanel2" type="button" role="tab" aria-controls="tabpanel2">摘要及關鍵字</button>
+			          </li>
+			          <li class="nav-item flex-shrink-0" role="presentation">
+			            <button id="tab3" class="nav-link p-2 px-lg-3 py-lg-2 tw:text-sm tw:lg:text-base" data-bs-toggle="pill" data-bs-target="#tabpanel3" type="button" role="tab" aria-controls="tabpanel3">目次</button>
+			          </li>
+			          <li class="nav-item flex-shrink-0" role="presentation">
+			            <button id="tab4" class="nav-link p-2 px-lg-3 py-lg-2 tw:text-sm tw:lg:text-base" data-bs-toggle="pill" data-bs-target="#tabpanel4" type="button" role="tab" aria-controls="tabpanel4">參考文獻</button>
+			          </li>
+			          <li class="nav-item flex-shrink-0" role="presentation">
+			            <button id="tab5" class="nav-link p-2 px-lg-3 py-lg-2 tw:text-sm tw:lg:text-base" data-bs-toggle="pill" data-bs-target="#tabpanel5" type="button" role="tab" aria-controls="tabpanel5">多媒體影音</button>
+			          </li>
+			        </ul>
+			        <div class="tab-content mt-n2">
+			          <div class="tab-pane fade show active" id="tabpanel1" role="tabpanel" aria-labelledby="tab1">
+			            <div class="card card-body border-0 rounded-3 vstack gap-3 p-xl-4 tw:shadow-md">
+			              <h2 class="fw-bold m-0 tw:text-base! tw:lg:text-[calc(20rem/16)]!">基本資料</h2>
+			              <ul class="list-unstyled m-0 vstack gap-3">
+			                <li class="d-flex flex-column flex-md-row gap-1 gap-md-2">
+			                  <span class="flex-shrink-0 text-md-end tw:min-w-38">論文永久網址：</span>
+			                  <span>https://hdl.handle.net/11296/43p</span>
+			                  <button class="btn btn-link align-self-start text-red p-0 ms-md-2" type="button">複製</button>
+			                </li>
+			                <li class="d-flex flex-column flex-md-row gap-1 gap-md-2">
+			                  <span class="flex-shrink-0 text-md-end tw:min-w-38">研究生：</span>
+			                  <a class="text-decoration-underline" href="">陳亭伃</a>
+			                </li>
+			                <li class="d-flex flex-column flex-md-row gap-1 gap-md-2">
+			                  <span class="flex-shrink-0 text-md-end tw:min-w-38">研究生(外文)：</span>
+			                  <a class="text-decoration-underline" href="">Chen, Hsi-Jen</a>
+			                </li>
+			                <li class="d-flex flex-column flex-md-row gap-1 gap-md-2">
+			                  <span class="flex-shrink-0 text-md-end tw:min-w-38">論文名稱：</span>
+			                  <span>探討教中學應用於設計思考課程中之課程特色與設計思考者特質</span>
+			                </li>
+			                <li class="d-flex flex-column flex-md-row gap-1 gap-md-2">
+			                  <span class="flex-shrink-0 text-md-end tw:min-w-38">論文名稱(外文)：</span>
+			                  <span>An Investigation into the Course Characteristics and Design Thinker Traits Development of "Learning by Teaching " in Design Thinking Education</span>
+			                </li>
+			                <li class="d-flex flex-column flex-md-row gap-1 gap-md-2">
+			                  <span class="flex-shrink-0 text-md-end tw:min-w-38">指導教授：</span>
+			                  <a class="text-decoration-underline" href="">陳璽任</a>
+			                </li>
+			                <li class="d-flex flex-column flex-md-row gap-1 gap-md-2">
+			                  <span class="flex-shrink-0 text-md-end tw:min-w-38">指導教授(外文)：</span>
+			                  <a class="text-decoration-underline" href="">Chen, Hsi-Jen</a>
+			                </li>
+			                <li class="d-flex flex-column flex-md-row gap-1 gap-md-2">
+			                  <span class="flex-shrink-0 text-md-end tw:min-w-38">口試委員：</span>
+			                  <span class="tw:not-last:after:content-['、']"><a class="text-decoration-underline" href="">楊佳翰</a></span>
+			                  <span class="tw:not-last:after:content-['、']"><a class="text-decoration-underline" href="">陳俊智</a></span>
+			                  <span class="tw:not-last:after:content-['、']"><a class="text-decoration-underline" href="">馬敏元</a></span>
+			                  <span class="tw:not-last:after:content-['、']"><a class="text-decoration-underline" href="">陳璽任</a></span>
+			                  <span class="tw:not-last:after:content-['、']"><a class="text-decoration-underline" href="">何俊亨</a></span>
+			                </li>
+			                <li class="d-flex flex-column flex-md-row gap-1 gap-md-2">
+			                  <span class="flex-shrink-0 text-md-end tw:min-w-38">口試日期：</span>
+			                  <span>2025-06-12</span>
+			                </li>
+			                <li class="d-flex flex-column flex-md-row gap-1 gap-md-2">
+			                  <span class="flex-shrink-0 text-md-end tw:min-w-38">學位類別：</span>
+			                  <span>碩士</span>
+			                </li>
+			                <li class="d-flex flex-column flex-md-row gap-1 gap-md-2">
+			                  <span class="flex-shrink-0 text-md-end tw:min-w-38">學門：</span>
+			                  <span>設計學門</span>
+			                </li>
+			                <li class="d-flex flex-column flex-md-row gap-1 gap-md-2">
+			                  <span class="flex-shrink-0 text-md-end tw:min-w-38">學類：</span>
+			                  <span>產品設計學類</span>
+			                </li>
+			                <li class="d-flex flex-column flex-md-row gap-1 gap-md-2">
+			                  <span class="flex-shrink-0 text-md-end tw:min-w-38">論文種類：</span>
+			                  <span>學術論文</span>
+			                </li>
+			                <li class="d-flex flex-column flex-md-row gap-1 gap-md-2">
+			                  <span class="flex-shrink-0 text-md-end tw:min-w-38">語文別：</span>
+			                  <span>英文</span>
+			                </li>
+			                <li class="d-flex flex-column flex-md-row gap-1 gap-md-2">
+			                  <span class="flex-shrink-0 text-md-end tw:min-w-38">論文頁數：</span>
+			                  <span>185</span>
+			                </li>
+			              </ul>
+			            </div>
+			          </div>
+			          <div class="tab-pane fade" id="tabpanel2" role="tabpanel" aria-labelledby="tab2">
+			            <div class="vstack gap-2">
+			              <div class="card card-body border-0 rounded-3 vstack gap-3 p-xl-4 tw:shadow-md">
+			                <h2 class="fw-bold m-0 tw:text-base! tw:lg:text-[calc(20rem/16)]!">中文摘要</h2>
+			                <p>隨著人工智慧技術的快速發展，深度學習在自然語言處理領域取得了突破性進展。本研究旨在探討深度學習自然語言處理技術在智慧教育系統中的應用可能性與實作方案。研究採用Transformer架構為基礎，結合BERT、GPT等預訓練模型，開發適用於中文教育內容的自然語言理解系統。</p>
+			                <p>本研究的主要貢獻包括：(1) 提出一個整合多模態學習的智慧教育框架；(2) 開發基於深度學習的中文教育內容自動分析系統；(3) 設計個人化學習路徑推薦演算法；(4) 建立教學效果評估機制。實驗結果顯示，所提出的系統在教育內容理解準確率達到92.5%，個人化推薦滿意度達到89.3%。</p>
+			              </div>
+			              <div class="card card-body border-0 rounded-3 vstack gap-3 p-xl-4 tw:shadow-md">
+			                <h2 class="fw-bold m-0 tw:text-base! tw:lg:text-[calc(20rem/16)]!">英文摘要</h2>
+			                <p>With the rapid development of artificial intelligence technologies, deep learning has achieved breakthrough progress in natural language processing. This research aims to explore the application possibilities and implementation solutions of deep learning NLP technologies in smart education systems. The study adopts Transformer architecture as the foundation, combining pre-trained models such as BERT and GPT to develop NLP systems suitable for Chinese educational content.</p>
+			              </div>
+			              <div class="card card-body border-0 rounded-3 vstack gap-3 p-xl-4 tw:shadow-md">
+			                <h2 class="fw-bold m-0 tw:text-base! tw:lg:text-[calc(20rem/16)]!">關鍵詞</h2>
+			                <p class="m-0 tw:text-[calc(15rem/16)]!">中文關鍵字</p>
+			                <div class="hstack flex-wrap gap-2 tw:**:text-[calc(15rem/16)]!">
+			                  <span class="badge text-body tw:bg-[#F4E7E7] tw:px-3! tw:py-2! tw:leading-4.5!">深度學習</span>
+			                  <span class="badge text-body tw:bg-[#F4E7E7] tw:px-3! tw:py-2! tw:leading-4.5!">關鍵字</span>
+			                  <span class="badge text-body tw:bg-[#F4E7E7] tw:px-3! tw:py-2! tw:leading-4.5!">關鍵字</span>
+			                  <span class="badge text-body tw:bg-[#F4E7E7] tw:px-3! tw:py-2! tw:leading-4.5!">關鍵字</span>
+			                  <span class="badge text-body tw:bg-[#F4E7E7] tw:px-3! tw:py-2! tw:leading-4.5!">關鍵字</span>
+			                </div>
+			                <p class="m-0 tw:text-[calc(15rem/16)]!">英文關鍵字</p>
+			                <div class="hstack flex-wrap gap-2 tw:**:text-[calc(15rem/16)]!">
+			                  <span class="badge text-body tw:bg-[#F4E7E7] tw:px-3! tw:py-2! tw:leading-4.5!">Keywords</span>
+			                  <span class="badge text-body tw:bg-[#F4E7E7] tw:px-3! tw:py-2! tw:leading-4.5!">Keywords</span>
+			                  <span class="badge text-body tw:bg-[#F4E7E7] tw:px-3! tw:py-2! tw:leading-4.5!">Keywords</span>
+			                  <span class="badge text-body tw:bg-[#F4E7E7] tw:px-3! tw:py-2! tw:leading-4.5!">Keywords</span>
+			                  <span class="badge text-body tw:bg-[#F4E7E7] tw:px-3! tw:py-2! tw:leading-4.5!">Keywords</span>
+			                </div>
+			              </div>
+			            </div>
+			          </div>
+			          <div class="tab-pane fade" id="tabpanel3" role="tabpanel" aria-labelledby="tab3">
+			            <div class="card card-body border-0 rounded-3 vstack gap-3 p-xl-4 tw:shadow-md">
+			              <h2 class="fw-bold m-0 tw:text-base! tw:lg:text-[calc(20rem/16)]!">目次</h2>
+			              <ul class="list-unstyled m-0 vstack">
+			                <li class="col-sm-8 col-xxl-7 hstack gap-1"><span class="text-nowrap">第一章 緒論</span><span class="flex-fill overflow-hidden position-relative tw:h-[1em]" aria-hidden="true"><span class="position-absolute bottom-0 left-0 text-nowrap tw:after:content-['.................................................................................................................']"></span></span><span class="text-end tw:min-w-[2ch]">1</span></li>
+			                <li class="col-sm-8 col-xxl-7 hstack gap-1"><span class="text-nowrap">第二章 文獻探討</span><span class="flex-fill overflow-hidden position-relative tw:h-[1em]" aria-hidden="true"><span class="position-absolute bottom-0 left-0 text-nowrap tw:after:content-['.................................................................................................................']"></span></span><span class="text-end tw:min-w-[2ch]">15</span></li>
+			                <li class="col-sm-8 col-xxl-7 hstack gap-1"><span class="text-nowrap">第三章 研究方法</span><span class="flex-fill overflow-hidden position-relative tw:h-[1em]" aria-hidden="true"><span class="position-absolute bottom-0 left-0 text-nowrap tw:after:content-['.................................................................................................................']"></span></span><span class="text-end tw:min-w-[2ch]">35</span></li>
+			                <li class="col-sm-8 col-xxl-7 hstack gap-1"><span class="text-nowrap">第四章 系統設計與實作</span><span class="flex-fill overflow-hidden position-relative tw:h-[1em]" aria-hidden="true"><span class="position-absolute bottom-0 left-0 text-nowrap tw:after:content-['.................................................................................................................']"></span></span><span class="text-end tw:min-w-[2ch]">58</span></li>
+			                <li class="col-sm-8 col-xxl-7 hstack gap-1"><span class="text-nowrap">第五章 實驗結果與分析</span><span class="flex-fill overflow-hidden position-relative tw:h-[1em]" aria-hidden="true"><span class="position-absolute bottom-0 left-0 text-nowrap tw:after:content-['.................................................................................................................']"></span></span><span class="text-end tw:min-w-[2ch]">89</span></li>
+			                <li class="col-sm-8 col-xxl-7 hstack gap-1"><span class="text-nowrap">第六章 結論與未來工作</span><span class="flex-fill overflow-hidden position-relative tw:h-[1em]" aria-hidden="true"><span class="position-absolute bottom-0 left-0 text-nowrap tw:after:content-['.................................................................................................................']"></span></span><span class="text-end tw:min-w-[2ch]">125</span></li>
+			                <li class="col-sm-8 col-xxl-7 hstack gap-1"><span class="text-nowrap">參考文獻</span><span class="flex-fill overflow-hidden position-relative tw:h-[1em]" aria-hidden="true"><span class="position-absolute bottom-0 left-0 text-nowrap tw:after:content-['.................................................................................................................']"></span></span><span class="text-end tw:min-w-[2ch]">135</span></li>
+			              </ul>
+			            </div>
+			          </div>
+			          <div class="tab-pane fade" id="tabpanel4" role="tabpanel" aria-labelledby="tab4">
+			            <div class="card card-body border-0 rounded-3 vstack gap-3 p-xl-4 tw:shadow-md">
+			              <h2 class="fw-bold m-0 tw:text-base! tw:lg:text-[calc(20rem/16)]!">參考文獻</h2>
+			              <ul class="list-unstyled m-0 vstack">
+			                <li>[1] Brown, T., Mann, B., Ryder, N., et al. (2020). Language models are few-shot learners. Advances in neural information processing systems, 33, 1877-1901.</li>
+			                <li>[2] Devlin, J., Chang, M. W., Lee, K., & Toutanova, K. (2018). Bert: Pre-training of deep bidirectional transformers for language understanding. arXiv preprint arXiv:1810.04805.</li>
+			                <li>[3] Vaswani, A., Shazeer, N., Parmar, N., et al. (2017). Attention is all you need. Advances in neural information processing systems, 30.</li>
+			                <li>[1] Brown, T., Mann, B., Ryder, N., et al. (2020). Language models are few-shot learners. Advances in neural information processing systems, 33, 1877-1901.</li>
+			                <li>[2] Devlin, J., Chang, M. W., Lee, K., & Toutanova, K. (2018). Bert: Pre-training of deep bidirectional transformers for language understanding. arXiv preprint arXiv:1810.04805.</li>
+			                <li>[3] Vaswani, A., Shazeer, N., Parmar, N., et al. (2017). Attention is all you need. Advances in neural information processing systems, 30.</li>
+			                <li>[1] Brown, T., Mann, B., Ryder, N., et al. (2020). Language models are few-shot learners. Advances in neural information processing systems, 33, 1877-1901.</li>
+			                <li>[2] Devlin, J., Chang, M. W., Lee, K., & Toutanova, K. (2018). Bert: Pre-training of deep bidirectional transformers for language understanding. arXiv preprint arXiv:1810.04805.</li>
+			                <li>[3] Vaswani, A., Shazeer, N., Parmar, N., et al. (2017). Attention is all you need. Advances in neural information processing systems, 30.</li>
+			                <li>[1] Brown, T., Mann, B., Ryder, N., et al. (2020). Language models are few-shot learners. Advances in neural information processing systems, 33, 1877-1901.</li>
+			                <li>[2] Devlin, J., Chang, M. W., Lee, K., & Toutanova, K. (2018). Bert: Pre-training of deep bidirectional transformers for language understanding. arXiv preprint arXiv:1810.04805.</li>
+			                <li>[3] Vaswani, A., Shazeer, N., Parmar, N., et al. (2017). Attention is all you need. Advances in neural information processing systems, 30.</li>
+			                <li>[1] Brown, T., Mann, B., Ryder, N., et al. (2020). Language models are few-shot learners. Advances in neural information processing systems, 33, 1877-1901.</li>
+			                <li>[2] Devlin, J., Chang, M. W., Lee, K., & Toutanova, K. (2018). Bert: Pre-training of deep bidirectional transformers for language understanding. arXiv preprint arXiv:1810.04805.</li>
+			                <li>[3] Vaswani, A., Shazeer, N., Parmar, N., et al. (2017). Attention is all you need. Advances in neural information processing systems, 30.</li>
+			              </ul>
+			            </div>
+			          </div>
+			          <div class="tab-pane fade" id="tabpanel5" role="tabpanel" aria-labelledby="tab5">
+			            <div class="vstack gap-2">
+			              <div class="card card-body border-0 rounded-3 vstack gap-3 p-xl-4 tw:shadow-md">
+			                <h2 class="fw-bold m-0 tw:text-base! tw:lg:text-[calc(20rem/16)]!">研究影片</h2>
+			                <div class="rounded-3 overflow-hidden">
+			                  <video class="w-100 h-100" controls>
+			                    <source src="https://www.w3schools.com/Html/mov_bbb.mp4" type="video/mp4">
+			                  </video>
+			                </div>
+			                <p class="m-0">阿美族豐年祭歌謠表演實錄<span class="d-block">時長：25:30</span></p>
+			              </div>
+			              <div class="card card-body border-0 rounded-3 vstack gap-3 p-xl-4 tw:shadow-md">
+			                <h2 class="fw-bold m-0 tw:text-base! tw:lg:text-[calc(20rem/16)]!">音訊檔案</h2>
+			                <div class="border rounded p-3 mt-n1">
+			                  <p class="hstack flex-wrap justify-content-between mb-2 tw:text-[calc(14rem/16)]!">阿美族豐年祭歌謠<time class="text-light-emphasis">4:32</time></p>
+			                  <audio class="w-100" controls>
+			                    <source src="https://www.w3schools.com/html/horse.mp3" type="audio/mpeg">
+			                  </audio>
+			                </div>
+			                <div class="border rounded p-3 mt-n1">
+			                  <p class="hstack flex-wrap justify-content-between mb-2 tw:text-[calc(14rem/16)]!">歌謠<time class="text-light-emphasis">6:30</time></p>
+			                  <audio class="w-100" controls>
+			                    <source src="https://www.w3schools.com/html/horse.mp3" type="audio/mpeg">
+			                  </audio>
+			                </div>
+			              </div>
+			            </div>
+			          </div>
+			        </div>
+			        <!-- /Tab Pane -->
+			      </div>
+			    </div>
+			    <div class="col">
+			      <div class="vstack gap-4">
+			        <div class="card card-body border-0 rounded-3 vstack gap-3 p-xl-4 tw:shadow-md">
+			          <h2 class="fw-bold m-0 tw:text-base! tw:lg:text-[calc(20rem/16)]!"><label class="form-label m-0" for="format">引用格式</label></h2>
+			          <select id="format" class="form-select rounded-1 tw:border-[#888888]! tw:min-h-12">
+			            <option value="" selected>APA</option>
+			            <option value="">item</option>
+			          </select>
+			          <hr class="opacity-100 my-0 tw:border-[#BDA9A2]!">
+			          <p class="m-0 tw:text-[calc(15rem/16)]!">陳志明 (2023)。深度學習自然語言處理在智慧教育系統中的應用研究。碩士論文，國立台灣大學資訊工程學系。</p>
+			          <button class="btn btn-light border-0 w-100 tw:min-h-12 tw:bg-[#BDA9A2]! tw:text-[calc(18rem/16)]!" type="button">複製引用</button>
+			        </div>
+			        <div class="card card-body border-0 rounded-3 vstack gap-3 p-xl-4 tw:shadow-md">
+			          <h2 class="fw-bold m-0 tw:text-base! tw:lg:text-[calc(20rem/16)]!">知識圖譜</h2>
+			          <img src="img/graph.png" alt="knowledge graph" width="114">
+			          <a class="btn btn-link text-start p-0 align-self-start tw:text-[calc(15rem/16)]!" href="">查看更多></a>
+			        </div>
+			        <div class="card card-body border-0 rounded-3 vstack gap-3 p-xl-4 tw:shadow-md">
+			          <h2 class="fw-bold m-0 tw:text-base! tw:lg:text-[calc(20rem/16)]!">相關論文</h2>
+			          <ul class="list-unstyled m-0 vstack gap-4">
+			            <li class="vstack gap-2 position-relative">
+			              <h3 class="fw-normal m-0 tw:text-[calc(18rem/16)]!">基於深度學習的智慧課程推薦系統研究</h3>
+			              <div class="vstack tw:text-[calc(15rem/16)]! tw:text-[#888888]">
+			                <span>林小慧 (2023)</span>
+			                <span>國立政治大學 資訊工程學系</span>
+			              </div>
+			              <a class="btn btn-link align-self-start text-red fw-bold text-start p-0 tw:text-[calc(18rem/16)]!" href="">查看詳情</a>
+			            </li>
+			            <li class="vstack gap-2 position-relative">
+			              <h3 class="fw-normal m-0 tw:text-[calc(18rem/16)]!">多模態機器學習在教育大數據分析中的應用</h3>
+			              <div class="vstack tw:text-[calc(15rem/16)]! tw:text-[#888888]">
+			                <span>黃志偉 (2022)</span>
+			                <span>國立政治大學 資訊工程學系</span>
+			              </div>
+			              <a class="btn btn-link align-self-start text-red fw-bold text-start p-0 tw:text-[calc(18rem/16)]!" href="">查看詳情</a>
+			            </li>
+			            <li class="vstack gap-2 position-relative">
+			              <h3 class="fw-normal m-0 tw:text-[calc(18rem/16)]!">自然語言處理技術在線上學習平台的實作評估</h3>
+			              <div class="vstack tw:text-[calc(15rem/16)]! tw:text-[#888888]">
+			                <span>李嘉慧 (2023)</span>
+			                <span>國立政治大學 資訊工程學系</span>
+			              </div>
+			              <a class="btn btn-link align-self-start text-red fw-bold text-start p-0 tw:text-[calc(18rem/16)]!" href="">查看詳情</a>
+			            </li>
+			          </ul>
+			        </div>
+			      </div>
+			    </div>
+			  </div>
+			</div>
+		</main>
+		<footer class="position-relative bg-red p-4 px-lg-0 py-lg-5">
+		  <div id="footer" class="footerBg">
+		    <div class="footerContainer container-lg">
+		      <div class="position-absolute d-none d-lg-inline-block"><a class="text-white ms-n4" href="#Z" id="AZ" name="Z" title="下方功能區塊" accesskey="Z">:::</a></div>
+		      <div class="vstack gap-3 tw:**:text-white!">
+		        <div class="row gx-5 gap-lg-5">
+		          <div class="col-auto">
+		            <div class="vstack gap-2">
+		              <p class="fw-bold m-0">關於我們</p>
+		              <a href="">網站簡介</a>
+		              <a href="">服務內容</a>
+		              <a href="">聯絡資訊</a>
+		              <a href="">大量書目申請</a>
+		            </div>
+		          </div>
+		          <div class="col-auto">
+		            <div class="vstack gap-2">
+		              <p class="fw-bold m-0">相關連結</p>
+		              <a href="">國圖首頁</a>
+		              <a href="">期刊文獻資訊網</a>
+		              <a href="">政府資料開放平臺</a>
+		            </div>
+		          </div>
+		        </div>
+		        <hr class="border-white opacity-100">
+		        <div class="hstack flex-wrap justify-content-lg-center column-gap-2 tw:**:text-[calc(15rem/16)]!">
+		          <div>＠ 2024國家圖書館 版權所有</div>
+		          <div class="vr opacity-100 align-self-center"></div>
+		          <a href="">隱私權政策</a>
+		          <div class="vr opacity-100 align-self-center"></div>
+		          <a href="">網站安全政策</a>
+		        </div>
+		      </div>
+		    </div>
+		    <!-- /footerContainer -->
+		  </div>
+		  <!-- /footerBg -->
+		</footer>
+
+		<script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
+	</body>
+</html>
