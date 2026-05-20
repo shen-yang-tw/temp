@@ -44,6 +44,7 @@
     --tw-font-weight-bold: 700;
     --tw-leading-tight: 1.25;
     --tw-leading-normal: 1.5;
+    --tw-radius-sm: 0.25rem;
     --tw-radius-md: 0.375rem;
     --tw-radius-lg: 0.5rem;
     --tw-radius-xl: 0.75rem;
@@ -931,6 +932,9 @@
   }
   .tw\:border-\[\#B6A19A\] {
     border-color: #B6A19A;
+  }
+  .tw\:border-\[\#B6A19A\]\! {
+    border-color: #B6A19A !important;
   }
   .tw\:border-\[\#BDA9A2\]\! {
     border-color: #BDA9A2 !important;
@@ -2298,6 +2302,11 @@
       max-height: calc(100vh - 100px);
     }
   }
+  .tw\:md\:w-27\.5\! {
+    @media (width >= 768px) {
+      width: calc(var(--tw-spacing) * 27.5) !important;
+    }
+  }
   .tw\:md\:w-\[130px\]\! {
     @media (width >= 768px) {
       width: 130px !important;
@@ -2470,6 +2479,11 @@
   .tw\:lg\:max-h-none {
     @media (width >= 992px) {
       max-height: none;
+    }
+  }
+  .tw\:lg\:min-h-11 {
+    @media (width >= 992px) {
+      min-height: calc(var(--tw-spacing) * 11);
     }
   }
   .tw\:lg\:min-h-12 {
@@ -2844,6 +2858,11 @@
       --bs-btn-padding-y: 8px !important;
     }
   }
+  .tw\:\[\&_input\]\:rounded-sm\! {
+    & input {
+      border-radius: var(--tw-radius-sm) !important;
+    }
+  }
   .tw\:\[\&_input\#ip\\_captcha\]\:w-37\.5\! {
     & input#ip_captcha {
       width: calc(var(--tw-spacing) * 37.5) !important;
@@ -2862,6 +2881,11 @@
   .tw\:\[\&_input\.is-invalid\]\:pr-1\.5\! {
     & input.is-invalid {
       padding-right: calc(var(--tw-spacing) * 1.5) !important;
+    }
+  }
+  .tw\:\[\&_select\]\:rounded-sm\! {
+    & select {
+      border-radius: var(--tw-radius-sm) !important;
     }
   }
   .tw\:checked\:\[\&\+\.btn\]\:text-\(--bs-primary\)\! {
